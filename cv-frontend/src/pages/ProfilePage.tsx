@@ -15,7 +15,7 @@ const ProfilePage: React.FC = () => {
                     name: 'Max Lee',
                     role: 'Student',
                     image: 'https://media.licdn.com/dms/image/D4D03AQFPOKdKGlBA0w/profile-displayphoto-shrink_800_800/0/1708106515253?e=1719446400&v=beta&t=0a3tBJ9Ea7YB1EKeP2daJmiLrQX_qvjl9igbSBeh--E',
-                    description: 'Profile description here.'
+                    description: 'Jeg er en blid student med en passion for programmering. Trives best med fullstack hvor jeg har erfaring med React og Java Springboot. Klikk på kortet mitt for å lære mer om meg'
                 },
                 {
                     id: 2,
