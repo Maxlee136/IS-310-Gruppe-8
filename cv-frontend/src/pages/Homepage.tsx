@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
                                     <p className="text-xl text-gray-700 font-bold">Max Lee</p>
                                     <p className="text-base text-gray-400 font-normal">IT Student</p>
                                     <p className="text-base leading-relaxed text-gray-500 font-normal">Hei! Mitt navn er
-                                        Max Lee. Jeg er It student med en passion for programmering. Trykke på kortet
+                                        Max Lee. Jeg er IT student med en passion for programmering. Trykk på kortet
                                         mitt for å lære mer om meg</p>
                                     <div className="flex justify-start space-x-2">
                                         <a href="https://www.facebook.com/profile.php?id=100006561961710&locale=nb_NO"
@@ -133,10 +133,10 @@ const HomePage: React.FC = () => {
                                          alt="photo"></img>
                                 </div>
                                 <div className="w-full md:w-3/5 text-left p-6 md:p-4 space-y-2">
-                                    <p className="text-xl text-gray-700 font-bold">Max Lee</p>
+                                    <p className="text-xl text-gray-700 font-bold">Jeppe Strømberg</p>
                                     <p className="text-base text-gray-400 font-normal">IT Student</p>
                                     <p className="text-base leading-relaxed text-gray-500 font-normal">Hei! Mitt navn er
-                                        Max Lee. Jeg er It student med en passion for programmering. Trykke på kortet
+                                        Jeppe strømberg. Jeg er IT student med en passion for alkohol. Trykk på kortet
                                         mitt for å lære mer om meg</p>
                                     <div className="flex justify-start space-x-2">
                                         <a href="https://www.facebook.com/profile.php?id=100006561961710&locale=nb_NO"
