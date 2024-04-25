@@ -7,7 +7,6 @@ import HomePage from "./pages/Homepage";
 import ProfilePage from "./pages/ProfilePage";
 import React from "react";
 
-
 const App: React.FC = () => {
     return (
         <Router>

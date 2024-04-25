@@ -1,32 +1,61 @@
 import { useParams } from 'react-router-dom';
-
-interface Member {
-    id: number;
-    name: string;
-    role: string;
-    resumeLink: string;
-}
+import { useEffect, useState } from 'react';
+import { Member } from "../Interface/Member"; // Ensure this path is correct
 
 const ProfilePage: React.FC = () => {
     const { id } = useParams<string>();
+    const [member, setMember] = useState<Member | null>(null);
 
-    // Fetch member details based on ID
-    const member: Member = { id: parseInt(id!), name: 'Max Lee', role: 'Student', resumeLink: 'url-to-pdf' };
+    useEffect(() => {
+        const fetchMemberData = async () => {
+            // Define the members array correctly
+            const members: Member[] = [
+                {
+                    id: 1,
+                    name: 'Max Lee',
+                    role: 'Student',
+                    image: 'https://media.licdn.com/dms/image/D4D03AQFPOKdKGlBA0w/profile-displayphoto-shrink_800_800/0/1708106515253?e=1719446400&v=beta&t=0a3tBJ9Ea7YB1EKeP2daJmiLrQX_qvjl9igbSBeh--E',
+                    description: 'Profile description here.'
+                },
+                {
+                    id: 2,
+                    name: 'Jeppe Strømberg',
+                    role: 'Student',
+                    image: 'https://media.licdn.com/dms/image/D4D03AQGKAVaAlR8jmg/profile-displayphoto-shrink_800_800/0/1705926113512?e=1719446400&v=beta&t=ZGBnb3P0bscirZZaJLcHa59END-dVgTfz8qdL_sq6Io',
+                    description: 'Another profile description here.'
+                },
+                {
+                    id: 3,
+                    name: 'Andreas Mørkesdal',
+                    role: 'Student',
+                    image: 'https://media.licdn.com/dms/image/D4E03AQHMFORjvQHEkw/profile-displayphoto-shrink_800_800/0/1712234915388?e=1719446400&v=beta&t=I2PmYMkq3V8k-0IeWMLU49x0snzVLo4Z0p2B3LdOVvQ',
+                    description: 'Another profile description here.'
+                }
+            ];
+            const selectedMember = members.find(m => m.id.toString() === id);
+            setMember(selectedMember ?? null);
+        };
+
+        fetchMemberData();
+    }, [id]);
+
+    if (!member) return <p>Loading member data...</p>;
 
     return (
         <div>
             <div className="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
                 <div className="grid justify-center items-center order-1 col-span-1">
-                    <img className="lg:h-80 md:h-64 h-40 rounded-full" src="https://scontent.fosl3-2.fna.fbcdn.net/v/t39.30808-6/384114230_18054013399466160_7478538626211862689_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ermsxSkjrZIAb5hppLf&_nc_ht=scontent.fosl3-2.fna&oh=00_AfCqx68UHeCmSlc2EHGXINqXK5n4qK0NrTfFggzfpWIURw&oe=663019A6" alt="" />
+                    <img className="lg:h-80 md:h-64 h-40 rounded-full" src={member.image} alt="" />
                 </div>
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
-                    <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">Hei, mitt navn er Max Lee</h1>
-                    <p className="text-xl text-gray-800 text-center md:text-left">Jeg er en it Student, med erfaring innenfor React og Java Spingboot. Jeg er veldig glad i å programmere og jobber med en Saas på fritiden</p>
+                    <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
+                    <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
                     <button className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">Last ned CV</button>
                 </div>
             </div>
         </div>
     );
 };
+
 
 export default ProfilePage;
