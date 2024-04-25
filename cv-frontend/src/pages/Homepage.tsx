@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
             name: 'Andreas',
             role: 'Student',
             image: 'https://media.licdn.com/dms/image/D4E03AQHMFORjvQHEkw/profile-displayphoto-shrink_800_800/0/1712234915388?e=1719446400&v=beta&t=I2PmYMkq3V8k-0IeWMLU49x0snzVLo4Z0p2B3LdOVvQ',
-            description: 'Another profile description here.'
+            description: 'Hei! Jeg er en IT student med fagbrev som IKT-servicemedarbeider. Klikk på kortet mitt for å lære mer om meg.'
         }
     ];
     return (
