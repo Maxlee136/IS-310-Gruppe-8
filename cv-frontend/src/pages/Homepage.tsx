@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
             id: 2,
             name: 'Jeppe Strømberg',
             role: 'Student',
-            image: '/Jeppe.jpeg',
+            image: '/jeppe.jpeg',
             description: 'Heisann! Jeg er en IT Student på UiA. Trykk på kortet mitt for å lære mer om meg'
         },
         {
@@ -25,11 +25,11 @@ const HomePage: React.FC = () => {
             description: 'Hei! Jeg er en IT student med fagbrev som IKT-servicemedarbeider. Klikk på kortet mitt for å lære mer om meg.'
         },
         {
-            id: 5,
-            name: 'Max Lee',
+            id: 4,
+            name: 'Olai Bergh Oldeide',
             role: 'Student',
-            image: '/Max.jpeg',
-            description: 'Hei! Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp. Klikk på kortet mitt for å lære mer om meg.'
+            image: '/Olai.jpeg',
+            description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend. Trykk på kortet mitt for mer informasjon om meg.'
         },
 
 
