@@ -32,6 +32,14 @@ const ProfilePage: React.FC = () => {
                     image: 'https://media.licdn.com/dms/image/D4E03AQHMFORjvQHEkw/profile-displayphoto-shrink_800_800/0/1712234915388?e=1719446400&v=beta&t=I2PmYMkq3V8k-0IeWMLU49x0snzVLo4Z0p2B3LdOVvQ',
                     description: 'Another profile description here.',
                     LinkToCV: 'https://drive.google.com/file/d/1siBjtgegJcGXDxzm8MEJ8u1zNjgSE_bq/view?usp=drive_link'
+                },
+                {
+                    id: 4,
+                    name: "Olai Bergh Oldeide",
+                    role: "Student",
+                    image: "",
+                    description: "another profile description here",
+                    LinkToCV:"https://drive.google.com/drive/folders/1YZy6QLc1L7ADNA-IsRmvOv-NMB2aL4Sn",
                 }
             ];
             const selectedMember = members.find(m => m.id.toString() === id);
