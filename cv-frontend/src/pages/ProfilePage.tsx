@@ -47,7 +47,7 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Wahl Iversen',
                     role: 'Student',
                     image: '/andreaswiv.jpeg',
-                    description: 'Another profile description here.',
+                    description: 'Jeg har jobbet mye med både frontend og backend i løpet av årene mine ved IT og Informasjonssystemer på UiA. Jeg trives best med frontend og vil prioritere det i prosjektet. Jeg synes det er veldig givende å jobbe med andre mennesker og trives godt med gruppearbeid.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
                 },
             ];
