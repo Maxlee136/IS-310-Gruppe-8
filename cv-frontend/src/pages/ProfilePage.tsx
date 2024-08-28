@@ -13,10 +13,14 @@ const ProfilePage: React.FC = () => {
                 {
                     id: 1,
                     name: 'Max Lee',
-                    role: 'Student',
+                    role: 'Backend',
                     image: '/Max.jpeg',
-                    description: 'Another profile description here.',
-                    LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/'
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/',
+                    description:
+                        'Jeg er en blid student med en passion for fullstack utvikling, mine ferdigheter er hovedsakelig innen Java og React TSX. ' +
+                        'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem' +
+                        ''
+
                 },
                 {
                     id: 2,
@@ -40,7 +44,7 @@ const ProfilePage: React.FC = () => {
                     role: 'Student',
                     image: '/Olai.jpeg',
                     description: 'Another profile description here.',
-                    LinkToLinkedIn: 'https://www.linkedin.com/in/olai-bergh-oldeide-720046269/'
+                    LinkToLinkedIn: 'https://drive.google.com/file/d/1siBjtgegJcGXDxzm8MEJ8u1zNjgSE_bq/view?usp=drive_link'
                 },
                 {
                     id: 5,
@@ -69,7 +73,7 @@ const ProfilePage: React.FC = () => {
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
                     <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
                     <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
-                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">LinkedIn</button>
+                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">LinkedIn profil</button>
                 </div>
             </div>
         </div>
