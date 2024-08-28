@@ -13,17 +13,21 @@ const ProfilePage: React.FC = () => {
                 {
                     id: 1,
                     name: 'Max Lee',
-                    role: 'Student',
+                    role: 'Backend',
                     image: '/Max.jpeg',
-                    description: 'Another profile description here.',
-                    LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/'
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/',
+                    description:
+                        'Jeg er en blid student med en passion for fullstack utvikling, mine ferdigheter er hovedsakelig innen Java og React TSX. ' +
+                        'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem' +
+                        ''
+
                 },
                 {
                     id: 2,
                     name: 'Jeppe Strømberg',
                     role: 'Student',
                     image: '/Jeppe.jpeg',
-                    description: 'Another profile description here.',
+                    description: 'Hei! Jeg er IT-student ved Universitetet i Agder (UiA), hvor jeg har utviklet et bredt spekter av kunnskap innenfor IT. Jeg har spesielt god kompetanse innen unittesting og backend-utvikling, men er også svært motivert for å lære og utforske andre områder.',
                     LinkToLinkedIn: ' https://www.linkedin.com/in/jeppe-strømberg-93110b26b/'
                 },
                 {
@@ -33,15 +37,6 @@ const ProfilePage: React.FC = () => {
                     image: '/Andreas.jpeg',
                     description: 'Another profile description here.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
-                },
-
-                {
-                    id: 5,
-                    name: 'Andreas Wahl Iversen',
-                    role: 'Student',
-                    image: '/andreaswiv.jpeg',
-                    description: 'Another profile description here.',
-                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
                 },
                 {
                     id: 4,
@@ -60,7 +55,7 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Wahl Iversen',
                     role: 'Student',
                     image: '/andreaswiv.jpeg',
-                    description: 'Another profile description here.',
+                    description: 'Jeg har jobbet mye med både frontend og backend i løpet av årene mine ved IT og Informasjonssystemer på UiA. Jeg trives best med frontend og vil prioritere det i prosjektet. Jeg synes det er veldig givende å jobbe med andre mennesker og trives godt med gruppearbeid.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
                 },
             ];
@@ -82,7 +77,7 @@ const ProfilePage: React.FC = () => {
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
                     <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
                     <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
-                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">LinkedIn</button>
+                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">LinkedIn profil</button>
                 </div>
             </div>
         </div>

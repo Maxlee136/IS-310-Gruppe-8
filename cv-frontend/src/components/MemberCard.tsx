@@ -1,4 +1,3 @@
-// components/MemberCard.tsx
 import { Link } from 'react-router-dom';
 import {Member} from "../Interface/Member";
 import React from "react";
@@ -17,7 +16,6 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
                 <p className="text-xl text-gray-700 font-bold">{member.name}</p>
                 <p className="text-base text-gray-400 font-normal">{member.role}</p>
                 <p className="text-base leading-relaxed text-gray-500 font-normal">{member.description}</p>
-                {/* Consider adding a SocialMediaLinks component here */}
             </div>
         </Link>
     );
