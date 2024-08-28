@@ -34,15 +34,7 @@ const ProfilePage: React.FC = () => {
                     description: 'Another profile description here.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
-                {
-                    id: 4,
-                    name: 'Olai Bergh Oldeide',
-                    role: 'Student',
-                    image: '/Olai.jpeg',
-                    image: '/Andreas.jpeg',
-                    description: 'Another profile description here.',
-                    LinkToLinkedIn: 'https://www.linkedin.com/in/olai-bergh-oldeide-720046269/'
-                },
+
                 {
                     id: 5,
                     name: 'Andreas Wahl Iversen',
@@ -50,8 +42,6 @@ const ProfilePage: React.FC = () => {
                     image: '/andreaswiv.jpeg',
                     description: 'Another profile description here.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
-                },
-                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
                 {
                     id: 4,
