@@ -14,33 +14,42 @@ const ProfilePage: React.FC = () => {
                     id: 1,
                     name: 'Max Lee',
                     role: 'Student',
-                    image: 'https://media.licdn.com/dms/image/D4D03AQFPOKdKGlBA0w/profile-displayphoto-shrink_800_800/0/1708106515253?e=1719446400&v=beta&t=0a3tBJ9Ea7YB1EKeP2daJmiLrQX_qvjl9igbSBeh--E',
-                    LinkToCV: 'https://drive.google.com/file/d/1siBjtgegJcGXDxzm8MEJ8u1zNjgSE_bq/view?usp=drive_link',
-                    description: 'Jeg er en blid student med en passion for programmering. Trives best med fullstack hvor jeg har erfaring med React og Java Springboot. Klikk på kortet mitt for å lære mer om meg'
+                    image: '/Max.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/'
                 },
                 {
                     id: 2,
                     name: 'Jeppe Strømberg',
                     role: 'Student',
-                    image: 'https://media.licdn.com/dms/image/D4D03AQGKAVaAlR8jmg/profile-displayphoto-shrink_800_800/0/1705926113512?e=1719446400&v=beta&t=ZGBnb3P0bscirZZaJLcHa59END-dVgTfz8qdL_sq6Io',
-                    description: 'Another profile description here.'
+                    image: '/Jeppe.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: ' https://www.linkedin.com/in/jeppe-strømberg-93110b26b/'
                 },
                 {
                     id: 3,
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
-                    image: 'https://media.licdn.com/dms/image/D4E03AQHMFORjvQHEkw/profile-displayphoto-shrink_800_800/0/1712234915388?e=1719446400&v=beta&t=I2PmYMkq3V8k-0IeWMLU49x0snzVLo4Z0p2B3LdOVvQ',
+                    image: '/Andreas.jpeg',
                     description: 'Another profile description here.',
-                    LinkToCV: 'https://drive.google.com/file/d/1siBjtgegJcGXDxzm8MEJ8u1zNjgSE_bq/view?usp=drive_link'
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
                 {
                     id: 4,
-                    name: "Olai Bergh Oldeide",
-                    role: "Student",
-                    image: "",
-                    description: "another profile description here",
-                    LinkToCV:"https://drive.google.com/drive/folders/1YZy6QLc1L7ADNA-IsRmvOv-NMB2aL4Sn",
-                }
+                    name: 'Olai Bergh Oldeide',
+                    role: 'Student',
+                    image: '/Olai.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/olai-bergh-oldeide-720046269/'
+                },
+                {
+                    id: 5,
+                    name: 'Andreas Wahl Iversen',
+                    role: 'Student',
+                    image: '/andreaswiv.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
+                },
             ];
             const selectedMember = members.find(m => m.id.toString() === id);
             setMember(selectedMember ?? null);
@@ -60,7 +69,7 @@ const ProfilePage: React.FC = () => {
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
                     <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
                     <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
-                    <button onClick={() => window.open(member.LinkToCV, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">Last ned CV</button>
+                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">LinkedIn</button>
                 </div>
             </div>
         </div>
