@@ -13,7 +13,7 @@ const ProfilePage: React.FC = () => {
                 {
                     id: 1,
                     name: 'Max Lee',
-                    role: 'Student',
+                    role: 'Backend',
                     image: '/Max.jpeg',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/',
                     description:
