@@ -31,7 +31,13 @@ const HomePage: React.FC = () => {
             image: '/Olai.jpeg',
             description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend. Trykk på kortet mitt for mer informasjon om meg.'
         },
-
+        {
+            id: 5,
+            name: 'Andreas Wahl Iversen',
+            role: 'Student',
+            image: '/andreaswiv.jpeg',
+            description: 'Jeg er en IT-student ved UiA. Jeg er sterk på samarbeid, problemløsning og å skape brukervennlige løsninger i team. Trykk på kortet mitt for mer informasjon om meg.'
+        },
 
     ];
     return (

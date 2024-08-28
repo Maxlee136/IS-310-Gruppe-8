@@ -26,17 +26,34 @@ const ProfilePage: React.FC = () => {
                     id: 2,
                     name: 'Jeppe Strømberg',
                     role: 'Student',
-                    image: 'https://media.licdn.com/dms/image/D4D03AQGKAVaAlR8jmg/profile-displayphoto-shrink_800_800/0/1705926113512?e=1719446400&v=beta&t=ZGBnb3P0bscirZZaJLcHa59END-dVgTfz8qdL_sq6Io',
-                    description: 'Another profile description here.'
+                    image: '/Jeppe.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: ' https://www.linkedin.com/in/jeppe-strømberg-93110b26b/'
                 },
                 {
                     id: 3,
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
-                    image: 'https://media.licdn.com/dms/image/D4E03AQHMFORjvQHEkw/profile-displayphoto-shrink_800_800/0/1712234915388?e=1719446400&v=beta&t=I2PmYMkq3V8k-0IeWMLU49x0snzVLo4Z0p2B3LdOVvQ',
+                    image: '/Andreas.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
+                },
+                {
+                    id: 4,
+                    name: 'Olai Bergh Oldeide',
+                    role: 'Student',
+                    image: '/Olai.jpeg',
                     description: 'Another profile description here.',
                     LinkToLinkedIn: 'https://drive.google.com/file/d/1siBjtgegJcGXDxzm8MEJ8u1zNjgSE_bq/view?usp=drive_link'
-                }
+                },
+                {
+                    id: 5,
+                    name: 'Andreas Wahl Iversen',
+                    role: 'Student',
+                    image: '/andreaswiv.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
+                },
             ];
             const selectedMember = members.find(m => m.id.toString() === id);
             setMember(selectedMember ?? null);
