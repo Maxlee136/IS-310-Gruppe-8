@@ -39,6 +39,25 @@ const ProfilePage: React.FC = () => {
                     name: 'Olai Bergh Oldeide',
                     role: 'Student',
                     image: '/Olai.jpeg',
+                    image: '/Andreas.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/olai-bergh-oldeide-720046269/'
+                },
+                {
+                    id: 5,
+                    name: 'Andreas Wahl Iversen',
+                    role: 'Student',
+                    image: '/andreaswiv.jpeg',
+                    description: 'Another profile description here.',
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
+                },
+                    LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
+                },
+                {
+                    id: 4,
+                    name: 'Olai Bergh Oldeide',
+                    role: 'Student',
+                    image: '/Olai.jpeg',
                     description: 'Jeg er en 27 år gammel mann som nå gjennomfører mitt siste år av min Bachelor innen IT og Informasjonssystemer ved UiA. \n' +
                         'Fra før jeg begynte på Bachelorutdanningen har jeg litt erfaring innen HTML, CSS og JavaScript - og gjennom utdanningen har jeg opparbeidet meg ytterligere erfaringer innen blant annet Objektorientert programmering gjennom Java, Datamoddelering og databasesystemer, Digitalt interaksjonsdesign samt Systemanalyse og -utvikling.\n' +
                         'Jeg føler meg absolutt sterkest innen frontend, og jobber om dagen for å utarbeide mine ferdigheter innen backend.\n' +
