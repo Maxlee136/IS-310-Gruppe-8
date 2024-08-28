@@ -5,5 +5,5 @@ export interface Member {
     role: string;
     image?: string;  
     description?: string; 
-    LinkToCV?: string; 
+    LinkToLinkedIn?: string;
 }
