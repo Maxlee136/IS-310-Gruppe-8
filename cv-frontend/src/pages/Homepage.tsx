@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
         {
             id: 3,
             name: 'Andreas Mørkesdal',
-            role: 'Fullstack',
+            role: 'Fullstack/Prosjektleder',
             image: '/Andreas.jpeg',
             description: 'Hei! Jeg er en IT student med fagbrev som IKT-servicemedarbeider. Klikk på kortet mitt for å lære mer om meg.'
         },
