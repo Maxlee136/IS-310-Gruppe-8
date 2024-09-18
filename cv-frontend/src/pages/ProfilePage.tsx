@@ -35,7 +35,7 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
                     image: '/andreas.jpg',
-                    description: 'Gjennom mitt fagbrev har jeg utviklet en god forståelse for samspillet mellom teknologi og mennesker, og lært å håndtere utfordringer med en løsnings- og serviceorientert tilnærming. Dette har styrket mine kommunikasjons- og samarbeidsevner med både brukere og kolleger. Studiet mitt har videreutviklet min kompetanse innen både frontend og backend, samtidig som jeg har fått erfaring som prosjektleder i flere prosjekter holdt gjennom studietiden. \n',
+                    description: 'Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. \n',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
                 {
