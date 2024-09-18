@@ -6,19 +6,17 @@ const HomePage: React.FC = () => {
     const members: Member[] = [
         {
             id: 1,
-            name: "Max Lee",
-            role: "Backend",
-            image: "/max.jpg",
-            description:
-                "Hei! Jeg er en blid student med en passion for å skape ting. Driver per idag to selskaper som jeg syntes er veldig gøy. Klikk på kortet mitt for å lære mer om meg.",
+            name: 'Max Lee',
+            role: 'Backend',
+            image: '/max.jpg',
+            description: 'Hei! Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp. Klikk på kortet mitt for å lære mer om meg.'
         },
         {
             id: 2,
-            name: "Jeppe Strømberg",
-            role: "Backend",
-            image: "/jeppe.jpg",
-            description:
-                "Heisann! Jeg er en IT Student på UiA. Trykk på kortet mitt for å lære mer om meg",
+            name: 'Jeppe Strømberg',
+            role: 'Backend',
+            image: '/jeppe.jpg',
+            description: 'Heisann! Jeg er en IT Student på UiA. Trykk på kortet mitt for å lære mer om meg'
         },
         {
             id: 3,
@@ -29,19 +27,17 @@ const HomePage: React.FC = () => {
         },
         {
             id: 4,
-            name: "Olai Bergh Oldeide",
-            role: "Frontend",
-            image: "/olai.jpg",
-            description:
-                "Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend. Trykk på kortet mitt for mer informasjon om meg.",
+            name: 'Olai Bergh Oldeide',
+            role: 'Frontend',
+            image: '/olai.jpg',
+            description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend. Trykk på kortet mitt for mer informasjon om meg.'
         },
         {
             id: 5,
-            name: "Andreas Wahl Iversen",
-            role: "Frontend",
-            image: "/andreaswiv.jpg",
-            description:
-                "Jeg er en IT-student ved UiA. Jeg er sterk på samarbeid, problemløsning og å skape brukervennlige løsninger i team. Trykk på kortet mitt for mer informasjon om meg.",
+            name: 'Andreas Wahl Iversen',
+            role: 'Frontend',
+            image: '/andreaswiv.jpg',
+            description: 'Jeg er en IT-student ved UiA. Jeg er sterk på samarbeid, problemløsning og å skape brukervennlige løsninger. Klikk på kortet mitt for å få mer informasjon om meg.'
         },
 
     ];
