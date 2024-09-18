@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
             name: 'Andreas Wahl Iversen',
             role: 'Frontend',
             image: '/andreaswiv.jpg',
-            description: 'Jeg er en IT-student ved UiA. Jeg er sterk på samarbeid, problemløsning og å skape brukervennlige løsninger i team. Trykk på kortet mitt for mer informasjon om meg.'
+            description: 'Jeg er en IT-student ved UiA. Jeg er sterk på samarbeid, problemløsning og å skape brukervennlige løsninger. Klikk på kortet mitt for å få mer informasjon om meg.'
         },
 
     ];
