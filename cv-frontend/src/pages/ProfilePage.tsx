@@ -18,8 +18,8 @@ const ProfilePage: React.FC = () => {
                     LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/',
                     description:
                         'Jeg er en blid student med en passion for fullstack utvikling, mine ferdigheter er hovedsakelig innen Java og React TSX. ' +
-                        'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem' +
-                        ''
+                        'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem. ' +
+                        'Med et grunder mindset ønsker jeg å bidra til innovasjon i bedriften deres gjennom bachelor prosjektet'
 
                 },
                 {
