@@ -14,7 +14,7 @@ const ProfilePage: React.FC = () => {
                     id: 1,
                     name: 'Max Lee',
                     role: 'Backend',
-                    image: '/Max.jpeg',
+                    image: '/max.jpg',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/',
                     description:
                         'Jeg er en blid student med en passion for fullstack utvikling, mine ferdigheter er hovedsakelig innen Java og React TSX. ' +
@@ -26,7 +26,7 @@ const ProfilePage: React.FC = () => {
                     id: 2,
                     name: 'Jeppe Strømberg',
                     role: 'Student',
-                    image: '/Jeppe.jpeg',
+                    image: '/jeppe.jpg',
                     description: 'Hei! Jeg er IT-student ved Universitetet i Agder (UiA), hvor jeg har utviklet et bredt spekter av kunnskap innenfor IT. Jeg har spesielt god kompetanse innen unittesting og backend-utvikling, men er også svært motivert for å lære og utforske andre områder.',
                     LinkToLinkedIn: ' https://www.linkedin.com/in/jeppe-strømberg-93110b26b/'
                 },
@@ -34,7 +34,7 @@ const ProfilePage: React.FC = () => {
                     id: 3,
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
-                    image: '/Andreas.jpeg',
+                    image: '/andreas.jpg',
                     description: 'Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. \n',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
@@ -42,7 +42,7 @@ const ProfilePage: React.FC = () => {
                     id: 4,
                     name: 'Olai Bergh Oldeide',
                     role: 'Student',
-                    image: '/Olai.jpeg',
+                    image: '/olai.jpg',
                     description: 'Jeg er en 27 år gammel mann som nå gjennomfører mitt siste år av min Bachelor innen IT og Informasjonssystemer ved UiA. \n' +
                         'Fra før jeg begynte på Bachelorutdanningen har jeg litt erfaring innen HTML, CSS og JavaScript - og gjennom utdanningen har jeg opparbeidet meg ytterligere erfaringer innen blant annet Objektorientert programmering gjennom Java, Datamoddelering og databasesystemer, Digitalt interaksjonsdesign samt Systemanalyse og -utvikling.\n' +
                         'Jeg føler meg absolutt sterkest innen frontend, og jobber om dagen for å utarbeide mine ferdigheter innen backend.\n' +
@@ -54,7 +54,7 @@ const ProfilePage: React.FC = () => {
                     id: 5,
                     name: 'Andreas Wahl Iversen',
                     role: 'Student',
-                    image: '/andreaswiv.jpeg',
+                    image: '/andreaswiv.jpg',
                     description: 'Jeg har jobbet mye med både frontend og backend i løpet av årene mine ved IT og Informasjonssystemer på UiA. Jeg trives best med frontend og vil prioritere det i prosjektet. Jeg synes det er veldig givende å jobbe med andre mennesker og trives godt med gruppearbeid.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
                 },

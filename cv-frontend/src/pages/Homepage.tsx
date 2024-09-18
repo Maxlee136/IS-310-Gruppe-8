@@ -7,35 +7,35 @@ const HomePage: React.FC = () => {
             id: 1,
             name: 'Max Lee',
             role: 'Backend',
-            image: '/Max.jpeg',
+            image: '/max.jpg',
             description: 'Hei! Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp. Klikk på kortet mitt for å lære mer om meg.'
         },
         {
             id: 2,
             name: 'Jeppe Strømberg',
             role: 'Backend',
-            image: '/Jeppe.jpeg',
+            image: '/jeppe.jpg',
             description: 'Heisann! Jeg er en IT Student på UiA. Trykk på kortet mitt for å lære mer om meg'
         },
         {
             id: 3,
             name: 'Andreas Mørkesdal',
             role: 'Fullstack/Prosjektleder',
-            image: '/Andreas.jpeg',
-            description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider. Klikk på kortet mitt for å får mer informasjon om meg.'
+            image: '/andreas.jpg',
+            description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider. Klikk på kortet mitt for å få mer informasjon om meg.'
         },
         {
             id: 4,
             name: 'Olai Bergh Oldeide',
             role: 'Frontend',
-            image: '/Olai.jpeg',
+            image: '/olai.jpg',
             description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend. Trykk på kortet mitt for mer informasjon om meg.'
         },
         {
             id: 5,
             name: 'Andreas Wahl Iversen',
             role: 'Frontend',
-            image: '/andreaswiv.jpeg',
+            image: '/andreaswiv.jpg',
             description: 'Jeg er en IT-student ved UiA. Jeg er sterk på samarbeid, problemløsning og å skape brukervennlige løsninger i team. Trykk på kortet mitt for mer informasjon om meg.'
         },
 
@@ -44,7 +44,7 @@ const HomePage: React.FC = () => {
         <>
 
             <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 mt-10">
-                <div className="text-center pb-12">
+                <div className="text-start pb-12">
                     <h2 className="text-base font-bold text-green-400">IS - 310</h2>
                     <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">Lær mer om
                         gruppen</h1>
@@ -57,8 +57,6 @@ const HomePage: React.FC = () => {
                         Gruppen har særlige ønsker om å jobbe med noe innen prosjektutvikling i sin helhet, og har
                         erfaring med dette fra et tidligere prosjekt på bestilling av Nøsted AS.
                     </h2>
-
-
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {members.map(member => <MemberCard key={member.id} member={member}/>)}
