@@ -18,8 +18,8 @@ const ProfilePage: React.FC = () => {
                     LinkToLinkedIn: 'https://www.linkedin.com/in/max-lee-257182221/',
                     description:
                         'Jeg er en blid student med en passion for fullstack utvikling, mine ferdigheter er hovedsakelig innen Java og React TSX. ' +
-                        'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem' +
-                        ''
+                        'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem. ' +
+                        'Med et grunder mindset ønsker jeg å bidra til innovasjon i bedriften deres gjennom bachelor prosjektet'
 
                 },
                 {
@@ -35,7 +35,7 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
                     image: '/andreas.jpg',
-                    description: 'Gjennom mitt fagbrev har jeg utviklet en god forståelse for samspillet mellom teknologi og mennesker, og lært å håndtere utfordringer med en løsnings- og serviceorientert tilnærming. Dette har styrket mine kommunikasjons- og samarbeidsevner med både brukere og kolleger. Studiet mitt har videreutviklet min kompetanse innen både frontend og backend, samtidig som jeg har fått erfaring som prosjektleder i flere prosjekter holdt gjennom studietiden. \n',
+                    description: 'Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. \n',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
                 {
@@ -55,7 +55,7 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Wahl Iversen',
                     role: 'Student',
                     image: '/andreaswiv.jpg',
-                    description: 'Jeg har jobbet mye med både frontend og backend i løpet av årene mine ved IT og Informasjonssystemer på UiA. Jeg trives best med frontend og vil prioritere det i prosjektet. Jeg synes det er veldig givende å jobbe med andre mennesker og trives godt med gruppearbeid.',
+                    description: 'Jeg har jobbet mye med både frontend og backend i løpet av årene mine ved IT og Informasjonssystemer på UiA. Jeg trives best med frontend og det er noe jeg vil prioritere mest når jeg koder i team. Jeg synes det er veldig givende å jobbe med andre mennesker og trives godt med gruppearbeid og lagprosjekt.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/'
                 },
             ];
