@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
             name: 'Jeppe Strømberg',
             role: 'Backend',
             image: '/jeppe.jpg',
-            description: 'Heisann! Jeg er en IT Student på UiA.'
+            description: 'Heisann! Jeg er en student ved UiA med en stor lidenskap for IT og informasjonssystemer, spesielt innen backend-utvikling. Jeg liker å jobbe med komplekse systemer og finne effektive løsninger på tekniske utfordringer.'
         },
         {
             id: 3,
@@ -49,7 +49,6 @@ const HomePage: React.FC = () => {
                     src="/gruppebilde.jpg"
                     alt="Student Portrait"
                     className="absolute inset-0 w-full h-full object-cover"
-
                 />
                 <div
                     className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
