@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
             name: 'Jeppe Strømberg',
             role: 'Backend',
             image: '/jeppe.jpg',
-            description: 'Heisann! Jeg er en IT Student på UiA. Trykk på kortet mitt for å lære mer om meg'
+            description: 'Heisann! Jeg er en student ved UiA med en stor lidenskap for IT og informasjonssystemer, spesielt innen backend-utvikling. Jeg liker å jobbe med komplekse systemer og finne effektive løsninger på tekniske utfordringer.'
         },
         {
             id: 3,
