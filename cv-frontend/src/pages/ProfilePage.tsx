@@ -35,7 +35,7 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
                     image: '/andreas.jpg',
-                    description: 'Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. \n',
+                    description: 'Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. Jeg er spesielt interessert i cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse. \n',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
                 {
@@ -77,7 +77,7 @@ const ProfilePage: React.FC = () => {
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
                     <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
                     <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
-                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-red-50 font-semibold rounded bg-red-400">LinkedIn profil</button>
+                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-white font-semibold rounded bg-green-400">LinkedIn profil</button>
                 </div>
             </div>
         </div>
