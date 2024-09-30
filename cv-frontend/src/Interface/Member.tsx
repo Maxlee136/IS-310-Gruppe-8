@@ -6,4 +6,5 @@ export interface Member {
     description?: string;
     clickOnCard?: string;
     LinkToLinkedIn?: string;
+    LinkToGitHub?: string;
 }
