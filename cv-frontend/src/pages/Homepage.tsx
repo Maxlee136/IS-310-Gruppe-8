@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
             name: 'Jeppe Strømberg',
             role: 'Backend',
             image: '/jeppe.jpg',
-            description:'Jeg har en lidenskap for IT og informasjonssystemer, med fokus på backend-utvikling. Koding er gøy.',
+            description:'Jeg er en student med lidenskap for backend-utvikling, og liker å jobbe med komplekse systemer og finne effektive løsninger.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
