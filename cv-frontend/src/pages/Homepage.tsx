@@ -58,10 +58,6 @@ const HomePage: React.FC = () => {
                     className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
                     <h1 className="text-white text-4xl md:text-6xl font-bold">GRUPPE 8</h1>
                     <p className="text-white mt-2 text-lg md:text-xl">Bachelor gruppe</p>
-                    <button
-                        className="mt-4 px-6 py-2 bg-white text-black font-semibold rounded-md hover:bg-gray-200 transition">
-                        Lær mer om gruppen
-                    </button>
                 </div>
             </div>
 
