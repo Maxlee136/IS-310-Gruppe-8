@@ -9,35 +9,40 @@ const HomePage: React.FC = () => {
             name: 'Max Lee',
             role: 'Backend',
             image: '/max.jpg',
-            description: 'Hei! Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp.'
+            description: 'Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp.',
+            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
         },
         {
             id: 2,
             name: 'Jeppe Strømberg',
             role: 'Backend',
             image: '/jeppe.jpg',
-            description: 'Heisann! Jeg er en student ved UiA med en stor lidenskap for IT og informasjonssystemer, spesielt innen backend-utvikling. Jeg liker å jobbe med komplekse systemer og finne effektive løsninger på tekniske utfordringer.'
+            description:'Jeg har en stor lidenskap for IT og informasjonssystemer, spesielt innen backend-utvikling. Jeg liker å jobbe med komplekse systemer og finne effektive løsninger på tekniske utfordringer.',
+            clickOnCard:'Klikk på kortet mitt for mer informasjon om meg!',
         },
         {
             id: 3,
             name: 'Andreas Mørkesdal',
             role: 'Fullstack/Prosjektleder',
             image: '/andreas.jpg',
-            description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider.'
+            description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider.',
+            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
         },
         {
             id: 4,
             name: 'Olai Bergh Oldeide',
             role: 'Frontend',
             image: '/olai.jpg',
-            description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend.'
+            description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend.',
+            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
         },
         {
             id: 5,
             name: 'Andreas Wahl Iversen',
             role: 'Frontend',
             image: '/andreaswiv.jpg',
-            description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.'
+            description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.',
+            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
         },
 
     ];
@@ -60,18 +65,20 @@ const HomePage: React.FC = () => {
             {/* Section: About the group */}
             <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 mt-10">
                 <div className="text-start pb-12">
-                    <h2 className="text-base font-bold text-green-400">IS - 310</h2>
-                    <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">
-                        Lær mer om gruppen
+                    <h1 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 relative inline-block">
+                        Mer om oss
+                        <span className="absolute -bottom-4 left-0.5 w-44 h-0.5 bg-green-400"></span>
                     </h1>
-                    <h2 className="mt-6 text-lg font-bold text-slate-600">
-                        Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
+                    <h2 className="mt-6 text-18px text-slate-600 w-[75%]">
+                        <br/>
+                    Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
                         valgt sammensetningen av gruppens medlemmer med omhu, basert på de enkeltes ferdigheter.
                         Ved dette er gruppen bygget opp av 2 som føler seg sterkest innen Frontend, 2 som yter
                         best innen Backend, og en gruppeleder som er stødig på Fullstack.
                         <br/> <br/>
                         Gruppen har særlige ønsker om å jobbe med noe innen prosjektutvikling i sin helhet, og
                         har erfaring med dette fra et tidligere prosjekt på bestilling av Nøsted AS.
+                        <br/><br/>
                     </h2>
                 </div>
 
