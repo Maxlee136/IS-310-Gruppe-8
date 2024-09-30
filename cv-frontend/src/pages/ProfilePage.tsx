@@ -79,7 +79,7 @@ const ProfilePage: React.FC = () => {
                     <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
                     <a href={member.LinkToLinkedIn} target="_blank" rel="noopener noreferrer">
                         <img
-                            src="/linkedin-logo.png" // Update this path to your LinkedIn logo
+                            src="/Linkedin_logo.png" // Update this path to your LinkedIn logo
                             alt="LinkedIn Profile"
                             className="block mt-8 mx-auto md:mx-0 h-10 w-10" // Adjust size as needed
                         />
