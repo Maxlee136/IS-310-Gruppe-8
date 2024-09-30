@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
             name: 'Olai Bergh Oldeide',
             role: 'Frontend',
             image: '/olai.jpg',
-            description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend.',
+            description: 'Jeg er en student med sans for systemutvikling som føler seg sterkest innen frontend og UI-design - og alltid er klar for å lære om nye teknologier.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
