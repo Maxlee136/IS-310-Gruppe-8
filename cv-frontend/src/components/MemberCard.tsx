@@ -21,7 +21,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
                     <br/>
                     <p className="text-base leading-relaxed text-gray-500 font-normal w-[90%]">{member.description}</p>
                 </div>
-                <p className="text-base leading-relaxed text-green-400 font-normal">{member.clickOnCard}</p>
+                <p className="text-base leading-relaxed text-customGreen font-normal">{member.clickOnCard}</p>
             </div>
         </Link>
     );
