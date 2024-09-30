@@ -3,6 +3,7 @@ export interface Member {
     name: string;
     role: string;
     image?: string;  
-    description?: string; 
+    description?: string;
+    clickOnCard?: string;
     LinkToLinkedIn?: string;
 }
