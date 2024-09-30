@@ -67,7 +67,7 @@ const HomePage: React.FC = () => {
                 <div className="text-start pb-12">
                     <h1 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 relative inline-block">
                         Mer om oss
-                        <span className="absolute -bottom-4 left-0.5 w-44 h-0.5 bg-green-400"></span>
+                        <span className="absolute -bottom-4 left-0.5 w-44 h-0.5 bg-customGreen"></span>
                     </h1>
                     <h2 className="mt-6 text-18px text-slate-600 w-[75%]">
                         <br/>
@@ -92,10 +92,15 @@ const HomePage: React.FC = () => {
             {/* Section: Contact Information */}
             <section className="bg-gray-100 py-12">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 text-center">
-                    <h2 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 mb-6">
-                        Kontaktinformasjon
-                    </h2>
+                    <div className="relative inline-block">
+                        <h2 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 mb-2 relative">
+                            Kontaktinformasjon
+                        </h2>
+                        <span className="absolute top-full left-0.5 w-[99%] h-0.5 bg-customGreen"></span>
+                    </div>
+
                     <p className="text-lg text-gray-700 mb-4">
+                        <br/>
                         Vi ser frem til å høre fra deg! Ta gjerne kontakt med oss for mer informasjon eller spørsmål.
                     </p>
                     <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-6">
@@ -110,7 +115,6 @@ const HomePage: React.FC = () => {
                             <h3 className="font-semibold text-xl text-gray-800">Telefon</h3>
                             <p className="text-gray-600">+47 966 26 777</p>
                         </div>
-
                     </div>
                 </div>
             </section>

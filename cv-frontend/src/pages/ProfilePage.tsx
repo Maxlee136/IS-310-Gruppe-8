@@ -84,19 +84,21 @@ const ProfilePage: React.FC = () => {
                     <div className="mt-4 flex justify-center md:justify-start">
                         <a href={member.LinkToLinkedIn} target="_blank" rel="noopener noreferrer" className="mr-4">
                             <img
-                                src="/Linkedin_logo.png" // Update this path to your LinkedIn logo
+                                src="/Linkedin_logo.png"
                                 alt="LinkedIn Profile"
-                                style={{ width: '4rem', height: '4rem' }} // Adjusted size
+                                style={{ width: '4rem', height: '4rem' }}
                                 className="inline" />
                         </a>
                         <a href={member.LinkToGitHub} target="_blank" rel="noopener noreferrer">
                             <img
-                                src="/Github-Logo.png" // Path to your GitHub logo
+                                src="/Github-Logo.png"
                                 alt="GitHub Profile"
-                                style={{ width: '7rem', height: '4rem' }} // Adjusted size
+                                style={{ width: '7rem', height: '4rem' }}
                                 className="inline" />
                         </a>
                     </div>
+                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-white font-semibold rounded bg-customGreen">LinkedIn profil</button>
+
                 </div>
             </div>
         </div>
