@@ -72,17 +72,22 @@ const ProfilePage: React.FC = () => {
         <div>
             <div className="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
                 <div className="grid justify-center items-center order-1 col-span-1">
-                    <img className="lg:h-80 md:h-64 h-40 rounded-full" src={member.image} alt="" />
+                    <img className="lg:h-80 md:h-64 h-40 rounded-full" src={member.image} alt={member.name} />
                 </div>
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
                     <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
                     <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
-                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-white font-semibold rounded bg-green-400">LinkedIn profil</button>
+                    <a href={member.LinkToLinkedIn} target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="/linkedin-logo.png" // Update this path to your LinkedIn logo
+                            alt="LinkedIn Profile"
+                            className="block mt-8 mx-auto md:mx-0 h-10 w-10" // Adjust size as needed
+                        />
+                    </a>
                 </div>
             </div>
         </div>
     );
 };
-
 
 export default ProfilePage;
