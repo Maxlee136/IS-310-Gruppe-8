@@ -89,6 +89,31 @@ const HomePage: React.FC = () => {
                     ))}
                 </div>
             </section>
+            {/* Section: Contact Information */}
+            <section className="bg-gray-100 py-12">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 text-center">
+                    <h2 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 mb-6">
+                        Kontaktinformasjon
+                    </h2>
+                    <p className="text-lg text-gray-700 mb-4">
+                        Vi ser frem til å høre fra deg! Ta gjerne kontakt med oss for mer informasjon eller spørsmål.
+                    </p>
+                    <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-6">
+                        {/* Email */}
+                        <div>
+                            <h3 className="font-semibold text-xl text-gray-800">Email</h3>
+                            <p className="text-gray-600">andreas.morkesdal@gmail.com</p>
+                        </div>
+
+                        {/* Phone */}
+                        <div>
+                            <h3 className="font-semibold text-xl text-gray-800">Telefon</h3>
+                            <p className="text-gray-600">+47 966 26 777</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </>
     );
 };
