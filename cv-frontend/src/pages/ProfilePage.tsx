@@ -91,7 +91,7 @@ const ProfilePage: React.FC = () => {
                 <div className="mt-4 flex justify-center md:justify-start">
                     <a href={member.LinkToLinkedIn} target="_blank" rel="noopener noreferrer" className="mr-4">
                         <img
-                            src="linkedin_logo.png"
+                            src="/linkedin_logo.png"
                             alt="LinkedIn Profile"
                             style={{ width: '4.5rem', height: '4.5rem' }}
                             className="inline" />
