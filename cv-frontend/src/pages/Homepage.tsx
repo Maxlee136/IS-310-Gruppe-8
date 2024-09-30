@@ -10,15 +10,15 @@ const HomePage: React.FC = () => {
             role: 'Backend',
             image: '/max.jpg',
             description: 'Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp.',
-            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
+            clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
             id: 2,
             name: 'Jeppe Strømberg',
             role: 'Backend',
             image: '/jeppe.jpg',
-            description:'Jeg har en stor lidenskap for IT og informasjonssystemer, spesielt innen backend-utvikling. Jeg liker å jobbe med komplekse systemer og finne effektive løsninger på tekniske utfordringer.',
-            clickOnCard:'Klikk på kortet mitt for mer informasjon om meg!',
+            description:'Jeg har en lidenskap for IT og informasjonssystemer, med fokus på backend-utvikling. Koding er gøy.',
+            clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
             id: 3,
@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
             role: 'Fullstack/Prosjektleder',
             image: '/andreas.jpg',
             description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider.',
-            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
+            clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
             id: 4,
@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
             role: 'Frontend',
             image: '/olai.jpg',
             description: 'Jeg er en IT-student ved UiA med sans for systemutvikling, som føler seg sterkest innen frontend.',
-            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
+            clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
             id: 5,
@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
             role: 'Frontend',
             image: '/andreaswiv.jpg',
             description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.',
-            clickOnCard: 'Klikk på kortet mitt for mer informasjon om meg!',
+            clickOnCard: 'Klikk på meg for mer informasjon!',
         },
 
     ];
