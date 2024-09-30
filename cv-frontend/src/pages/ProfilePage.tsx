@@ -77,7 +77,7 @@ const ProfilePage: React.FC = () => {
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
                     <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
                     <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
-                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-white font-semibold rounded bg-green-400">LinkedIn profil</button>
+                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-white font-semibold rounded bg-customGreen">LinkedIn profil</button>
                 </div>
             </div>
         </div>
