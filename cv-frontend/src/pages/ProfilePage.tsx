@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Member } from "../Interface/Member"; // Ensure this path is correct
 
 const ProfilePage: React.FC = () => {
-    const { id } = useParams<string>();
+    const {id} = useParams<string>();
     const [member, setMember] = useState<Member | null>(null);
 
     useEffect(() => {
@@ -35,19 +35,19 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
                     image: '/andreas.jpg',
-                    description: 'Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. Jeg er spesielt interessert i cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse. \n',
+                    description: `Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. 
+                       \n I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. Jeg er spesielt interessert i cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse.`,
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/'
                 },
                 {
+
                     id: 4,
                     name: 'Olai Bergh Oldeide',
                     role: 'Student',
                     image: '/olai.jpg',
-                    description: 'Jeg er en 27 år gammel mann som nå gjennomfører mitt siste år av min Bachelor innen IT og Informasjonssystemer ved UiA. \n' +
-                        'Fra før jeg begynte på Bachelorutdanningen har jeg litt erfaring innen HTML, CSS og JavaScript - og gjennom utdanningen har jeg opparbeidet meg ytterligere erfaringer innen blant annet Objektorientert programmering gjennom Java, Datamoddelering og databasesystemer, Digitalt interaksjonsdesign samt Systemanalyse og -utvikling.\n' +
-                        'Jeg føler meg absolutt sterkest innen frontend, og jobber om dagen for å utarbeide mine ferdigheter innen backend.\n' +
-                        '\n' +
-                        'Ved siden av studiene jobber jeg i utelivsbransjen i Kristiansand, og fritiden min tilbringer jeg helst ute i det fri.',
+                    description: `Jeg er en 27 år gammel mann som nå gjennomfører mitt siste år av min Bachelor innen IT og Informasjonssystemer ved UiA.
+                 \n Fra før jeg begynte på Bachelorutdanningen har jeg opparbeidet meg litt erfaring innen HTML, CSS og JavaScript - og gjennom utdanningen har jeg fått ytterligere erfaringer innen blant annet Objektorientert programmering gjennom Java, Datamodellering og databasesystemer, Digitalt interaksjonsdesign samt Systemanalyse og -utvikling.
+                  \n Jeg føler meg absolutt sterkest innen frontend, og jobber om dagen for å utarbeide mine ferdigheter innen backend. Ved siden av studiene jobber jeg i utelivsbransjen i Kristiansand, og fritiden min tilbringer jeg helst ute i det fri.`,
                     LinkToLinkedIn: 'https://www.linkedin.com/in/olai-bergh-oldeide-720046269/'
                 },
                 {
@@ -72,17 +72,24 @@ const ProfilePage: React.FC = () => {
         <div>
             <div className="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
                 <div className="grid justify-center items-center order-1 col-span-1">
-                    <img className="lg:h-80 md:h-64 h-40 rounded-full" src={member.image} alt="" />
+                    <img className="lg:h-96 md:h-96 h-60 rounded-full" src={member.image} alt="" />
                 </div>
                 <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
-                    <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-6">{member.name}</h1>
-                    <p className="text-xl text-gray-800 text-center md:text-left">{member.description}</p>
-                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')} className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-white font-semibold rounded bg-customGreen">LinkedIn profil</button>
+                    <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-2 relative inline-block">
+                        {member.name}
+                        <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-customGreen"></span>
+                    </h1>
+                    <br/><br/>
+                    <p className="text-18px text-gray-800 text-center md:text-left w-[85%] leading-relaxed whitespace-pre-line">
+                        {member.description}
+                    </p>
+                    <button onClick={() => window.open(member.LinkToLinkedIn, '_blank')}
+                            className="block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-white font-semibold rounded bg-customGreen">
+                        LinkedIn profil
+                    </button>
                 </div>
             </div>
         </div>
     );
-};
-
-
-export default ProfilePage;
+}
+    export default ProfilePage;
