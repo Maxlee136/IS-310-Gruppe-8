@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import { Member } from "../Interface/Member"; // Ensure this path is correct
+import { Member } from "../Interface/Member";
+import Navbar from "../components/Navbar"; // Ensure this path is correct
 
 const ProfilePage: React.FC = () => {
     const {id} = useParams<string>();
@@ -80,6 +81,7 @@ const ProfilePage: React.FC = () => {
 
     return (
         <div>
+            <Navbar />
             <div className="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
                 <div className="grid justify-center items-center order-1 col-span-1">
                     <img className="lg:h-96 md:h-96 h-60 rounded-full" src={member.image} alt="" />
@@ -89,8 +91,8 @@ const ProfilePage: React.FC = () => {
                         {member.name}
                         <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-customGreen"></span>
                     </h1>
-                    <br /><br />
-                    <p className="text-lg text-gray-800 w-[100%] md:w-[85%] leading-relaxed whitespace-pre-line">
+                    <br/><br/>
+                    <p className="text-18px text-gray-800 :text-left w-[85%] leading-relaxed whitespace-pre-line">
                         {member.description}
                     </p>
                     <br />
@@ -132,5 +134,4 @@ const ProfilePage: React.FC = () => {
         </div>
     );
 }
-
 export default ProfilePage;
