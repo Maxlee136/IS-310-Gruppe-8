@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
             name: 'Max Lee',
             role: 'Backend',
             image: '/max.jpg',
-            description: 'Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp.',
+            description: 'Jeg er en blid student med en passion for programmering. Jeg interesser meg særlig for å jobbe med AI prosjekter, fullstack utvikling og har for tiden et grunder prosjekt innenfor SAAS.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -25,7 +25,7 @@ const HomePage: React.FC = () => {
             name: 'Andreas Mørkesdal',
             role: 'Fullstack/Prosjektleder',
             image: '/andreas.jpg',
-            description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider.',
+            description: 'Jeg er en IT-student med fagbrev som IKT-servicemedarbeider, og har en spesiell interesse for cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -44,7 +44,7 @@ const HomePage: React.FC = () => {
             description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
-
+       
     ];
     return (
         <>
