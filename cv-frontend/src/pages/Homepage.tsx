@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
             name: 'Max Lee',
             role: 'Backend',
             image: '/max.jpg',
-            description: 'Jeg er en blid student med en passion for programmering. Jeg interesser meg særlig for å jobbe med AI prosjekter, fullstack utvikling og har for tiden et grunder prosjekt innenfor SAAS.',
+            description: 'Jeg er en blid student med en passion for programmering. Jeg interesser meg særlig for å jobbe med AI prosjekter og har for tiden et grunder prosjekt innenfor SAAS.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {

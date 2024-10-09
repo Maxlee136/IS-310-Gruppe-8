@@ -21,8 +21,14 @@ const ProfilePage: React.FC = () => {
                         'Jeg er en blid student med en passion for fullstack utvikling, mine ferdigheter er hovedsakelig innen Java og React TSX. ' +
                         'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem. ' +
                         'Med et grunder mindset ønsker jeg å bidra til innovasjon i bedriften deres gjennom bachelor prosjektet',
-
+                    bulletPoints: [
+                        "Frontend: React, Tailwind, CSS",
+                        "Backend: C#, Php, Java",
+                        "Database: MariaDB, MySQL, Docker",
+                        "Andre ferdigheter/interesser: Git, problemløsning, innovasjon",
+                    ],
                 },
+
                 {
                     id: 2,
                     name: 'Jeppe Strømberg',

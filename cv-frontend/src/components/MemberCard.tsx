@@ -19,7 +19,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
                     alt={`Profile of ${member.name}`}
                 />
             </div>
-            <div className="w-full md:w-3/5 h-60 text-center p-6 md:p-4 space-y-2 flex flex-col justify-between">
+            <div className="w-full md:w-3/5 h-60 text-left p-6 md:p-4 space-y-2 flex flex-col justify-between">
                 <div>
                     <p className="text-xl text-gray-700 font-bold">{member.name}</p>
                     <p className="text-base text-gray-400 font-normal">{member.role}</p>
