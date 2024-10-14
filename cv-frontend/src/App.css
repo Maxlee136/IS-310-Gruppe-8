@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+/* Member card styles */
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* Adjust based on preference */
+  aspect-ratio: 3 / 4; /* Change aspect ratio to portrait */
+  object-fit: contain; /* Ensures the whole image is visible */
+  border-radius: 10px; /* Adjusted to not crop into the face */
+}
+
+.member-card h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.member-card p {
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .member-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .member-card img {
+    width: 100%;
+    max-width: 200px; /* Adjust to fit the layout */
+    height: auto;
+    aspect-ratio: 3 / 4; /* Ensures the portrait aspect ratio */
+    object-fit: center; /* Ensures the image covers the space without distortion */
+    object-position: top; /* Moves the image position to ensure the head stays visible */
+    border-radius: 10px; /* Keeps the image rectangular with rounded corners */
+  }
+
+
+  .member-card h3 {
+    font-size: 1.2em;
+  }
+
+  .member-card p {
+    font-size: 0.9em;
+  }
+}

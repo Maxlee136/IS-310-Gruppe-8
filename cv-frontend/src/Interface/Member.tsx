@@ -7,4 +7,5 @@ export interface Member {
     clickOnCard?: string;
     LinkToLinkedIn?: string;
     LinkToGitHub?: string;
+    bulletPoints?: string[];
 }

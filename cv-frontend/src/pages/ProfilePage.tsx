@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import { Member } from "../Interface/Member"; // Ensure this path is correct
+import { Member } from "../Interface/Member";
+import Navbar from "../components/Navbar"; // Ensure this path is correct
 
 const ProfilePage: React.FC = () => {
     const {id} = useParams<string>();
@@ -20,8 +21,14 @@ const ProfilePage: React.FC = () => {
                         'Jeg er en blid student med en passion for fullstack utvikling, mine ferdigheter er hovedsakelig innen Java og React TSX. ' +
                         'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem. ' +
                         'Med et grunder mindset ønsker jeg å bidra til innovasjon i bedriften deres gjennom bachelor prosjektet',
-
+                    bulletPoints: [
+                        "Frontend: React, Typescript, Tailwind CSS",
+                        "Backend: Java Springboot, C#",
+                        "Database: MariaDB og MySQL",
+                        "Andre ferdigheter/interesser: Prosjektarbeid, Git, Entreprenørskap  ",
+                    ],
                 },
+
                 {
                     id: 2,
                     name: 'Jeppe Strømberg',
@@ -61,6 +68,12 @@ const ProfilePage: React.FC = () => {
                     description: 'Jeg har jobbet mye med både frontend og backend i løpet av årene mine ved IT og Informasjonssystemer på UiA. Jeg trives best med frontend og det er noe jeg vil prioritere mest når jeg koder i team. Jeg synes det er veldig givende å jobbe med andre mennesker og trives godt med gruppearbeid og lagprosjekt.',
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/',
                     LinkToGitHub: 'https://github.com/Andreaswiv',
+                    bulletPoints: [
+                        "Frontend: React, Typescript, Tailwind CSS,",
+                        "Backend: C#, Php, Java",
+                        "Database: MariaDB, MySQL, Docker",
+                        "Andre ferdigheter/interesser: Git, problemløsning, innovasjon",
+                    ],
                 },
             ];
             const selectedMember = members.find(m => m.id.toString() === id);
@@ -74,39 +87,57 @@ const ProfilePage: React.FC = () => {
 
     return (
         <div>
-            <div className="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
-                <div className="grid justify-center items-center order-1 col-span-1">
-                    <img className="lg:h-96 md:h-96 h-60 rounded-full" src={member.image} alt="" />
+            <Navbar />
+            <div className="container mx-auto md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-32">
+                <div className="mt-8 grid justify-center items-center order-1 col-span-1">
+                    <img className=" lg:h-96 md:h-96 h-60 rounded-full" src={member.image} alt="" />
                 </div>
-                <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
-                    <h1 className="text-4xl text-gray-800 text-center md:text-left font-bold mb-2 relative inline-block">
+                <div className="mt-8 md:mt-0 lg:justify-end col-span-2 px-4 md:px-4">
+                    <h1 className="text-4xl text-gray-800 text-center font-bold mb-2 relative inline-block">
                         {member.name}
                         <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-customGreen"></span>
                     </h1>
                     <br/><br/>
-                    <p className="text-18px text-gray-800 text-center md:text-left w-[85%] leading-relaxed whitespace-pre-line">
+                    <p className="text-18px text-gray-800 :text-left w-[85%] leading-relaxed whitespace-pre-line">
                         {member.description}
                     </p>
-                    <br/>
-                <div className="mt-4 flex justify-center md:justify-start">
-                    <a href={member.LinkToLinkedIn} target="_blank" rel="noopener noreferrer" className="mr-4">
-                        <img
-                            src="/linkedin_logo.png"
-                            alt="LinkedIn Profile"
-                            style={{ width: '4.5rem', height: '4.5rem' }}
-                            className="inline" />
-                    </a>
-                    <a href={member.LinkToGitHub} target="_blank" rel="noopener noreferrer">
-                        <img
-                            src="/github-logo.png"
-                            alt="GitHub Profile"
-                            style={{ width: '7.5rem', height: '4.5rem' }}
-                            className="inline" />
-                    </a>
+                    <br />
+                    {member.bulletPoints && (
+                        <div className="mt-4 px-4 md:px-8">
+                            <strong className="text-gray-800">IT-Kompetanseområder</strong>
+                            <ul className="list-disc list-inside text-gray-800 mt-2 ">
+                                {member.bulletPoints.map((point, index) => {
+                                    const [boldPart, restPart] = point.split(':');
+                                    return (
+                                        <li key={index} className="py-1">
+                                            <strong>{boldPart}:</strong>{' '}
+                                            {restPart && <span>{restPart.trim()}</span>} {}
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+                    )}
+                    <br />
+                    <div className="mt-4 flex justify-center md:justify-start">
+                        <a href={member.LinkToLinkedIn} target="_blank" rel="noopener noreferrer" className="mr-4">
+                            <img
+                                src="/linkedin_logo.png"
+                                alt="LinkedIn Profile"
+                                style={{ width: '4.5rem', height: '4.5rem' }}
+                                className="inline" />
+                        </a>
+                        <a href={member.LinkToGitHub} target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="/github-logo.png"
+                                alt="GitHub Profile"
+                                style={{ width: '7.5rem', height: '4.5rem' }}
+                                className="inline" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-</div>
-);
+    );
 }
 export default ProfilePage;

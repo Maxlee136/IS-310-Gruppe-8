@@ -1,6 +1,8 @@
 import MemberCard from "../components/MemberCard";
 import {Member} from "../Interface/Member";
-import React from "react";
+import React, {useEffect} from "react";
+import Navbar from "../components/Navbar";
+import {useLocation} from "react-router-dom";
 
 const HomePage: React.FC = () => {
     const members: Member[] = [
@@ -9,7 +11,7 @@ const HomePage: React.FC = () => {
             name: 'Max Lee',
             role: 'Backend',
             image: '/max.jpg',
-            description: 'Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp.',
+            description: 'Jeg er en blid student med en passion for programmering. Jeg interesser meg særlig for å jobbe med AI prosjekter, fullstack utvikling og har for tiden et grunder prosjekt innenfor SAAS.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -25,7 +27,7 @@ const HomePage: React.FC = () => {
             name: 'Andreas Mørkesdal',
             role: 'Fullstack/Prosjektleder',
             image: '/andreas.jpg',
-            description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider.',
+            description: 'Jeg er en IT-student med fagbrev som IKT-servicemedarbeider, og har en spesiell interesse for cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -46,6 +48,17 @@ const HomePage: React.FC = () => {
         },
 
     ];
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === "#Kontakt") {
+            const contactSection = document.getElementById("Kontakt");
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
     return (
         <>
             {/* Full-page portrait section */}
@@ -64,10 +77,6 @@ const HomePage: React.FC = () => {
         </div>
     </div>
 
-    
-    
-
-
             {/* Section: About the group */}
             <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 mt-10">
                 <div className="text-start pb-12">
@@ -78,12 +87,12 @@ const HomePage: React.FC = () => {
                     <h2 className="mt-6 text-18px text-slate-600 w-[75%]">
                         <br/>
                     Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
-                        valgt sammensetningen av gruppens medlemmer med omhu, basert på de enkeltes ferdigheter.
-                        Ved dette er gruppen bygget opp av 2 som føler seg sterkest innen Frontend, 2 som yter
-                        best innen Backend, og en gruppeleder som er stødig på Fullstack.
+                        valgt sammensetningen av gruppens medlemmer med omhu, basert på den enkeltes ferdigheter.
+                        Vi består av en gruppeleder, som også er stødig på Fullstack, to med mest kompetanse innen Frontend, og to som yter best innen Backend.
+
                         <br/> <br/>
                         Gruppen har særlige ønsker om å jobbe med noe innen prosjektutvikling i sin helhet, og
-                        har erfaring med dette fra et tidligere prosjekt på bestilling av Nøsted AS.
+                        har erfaring med dette fra diverse prosjekter på UIA, der vi har samarbeidet med Nøsted AS, Padlegleden, Egde og SmartSight.
                         <br/><br/>
                     </h2>
                 </div>
@@ -96,7 +105,7 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
             {/* Section: Contact Information */}
-            <section className="bg-gray-100 py-12">
+            <section id="Kontakt" className="bg-gray-100 py-12">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 text-center">
                     <div className="relative inline-block">
                         <h2 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 mb-2 relative">
@@ -106,7 +115,7 @@ const HomePage: React.FC = () => {
                     </div>
 
                     <p className="text-lg text-gray-700 mb-4">
-                        <br/>
+                        <br />
                         Vi ser frem til å høre fra deg! Ta gjerne kontakt med oss for mer informasjon eller spørsmål.
                     </p>
                     <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-6">
