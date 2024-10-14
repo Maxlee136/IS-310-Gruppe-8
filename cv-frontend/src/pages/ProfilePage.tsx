@@ -68,10 +68,15 @@ const ProfilePage: React.FC = () => {
                     role: 'Student',
                     image: '/olai.jpg',
                     description: `Jeg er en 27 år gammel mann som nå gjennomfører mitt siste år av min Bachelor innen IT og Informasjonssystemer ved UiA.
-                 \n Fra før jeg begynte på Bachelorutdanningen har jeg opparbeidet meg litt erfaring innen HTML, CSS og JavaScript - og gjennom utdanningen har jeg fått ytterligere erfaringer innen blant annet Objektorientert programmering gjennom Java, Datamodellering og databasesystemer, Digitalt interaksjonsdesign samt Systemanalyse og -utvikling.
-                  \n Jeg føler meg absolutt sterkest innen frontend, og jobber om dagen for å utarbeide mine ferdigheter innen backend. Ved siden av studiene jobber jeg i utelivsbransjen i Kristiansand, og fritiden min tilbringer jeg helst ute i det fri.`,
+                    \n Jeg føler meg sterkest innen frontend, og jobber om dagen for å utarbeide mine ferdigheter innen backend. Ved siden av studiene jobber jeg i utelivsbransjen i Kristiansand, og fritiden min tilbringer jeg helst ute i det fri. \n`,
                     LinkToLinkedIn: 'https://www.linkedin.com/in/olai-bergh-oldeide-720046269/',
                     LinkToGitHub: 'https://github.com/Olaibo',
+                    bulletPoints: [
+                        "Frontend: HTML, CSS, JavaScript, React, TypeScript",
+                        "Backend: C#, Java, PHP",
+                        "Database: MariaDB, mySQL",
+                        "Andre ferdigheter/ interesser: Docker, AI, Cybersikkerhet, digitalt interaksjonsdesign, systemanalyse og -utvikling",
+                    ]
                 },
                 {
                     id: 5,
