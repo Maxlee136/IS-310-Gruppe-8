@@ -40,8 +40,8 @@ const ProfilePage: React.FC = () => {
                     bulletPoints: [
                         "Frontend: React, Typescript, Tailwind CSS",
                         "Backend: Java Springboot, C#",
-                        "Database: MariaDB og MySQL",
-                        "Andre ferdigheter/interesser: Prosjektarbeid, Git, Unit testing, Problemløsning ",
+                        "Database: MariaDB og MySQL, PostgreSQL",
+                        "Andre ferdigheter/interesser: Prosjektarbeid, Git, Unit testing, Problemløsning, Kunstig intelligens, Microsoft Azure, Cyber sikkerhet ",
                     ],
                 },
                 {
