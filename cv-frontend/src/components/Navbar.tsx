@@ -17,6 +17,10 @@ const Navbar: React.FC = () => {
         }
     };
 
+    const handleNewSiteClick = () => {
+        navigate("/#Portofølje"); // Replace '/new-site' with the actual path to your new site
+    };
+
     return (
         <nav className="bg-white shadow-md py-8">
             <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
@@ -31,6 +35,9 @@ const Navbar: React.FC = () => {
                     </a>
                     <button onClick={handleContactClick} className="text-gray-600 hover:text-gray-900">
                         Kontakt oss
+                    </button>
+                    <button onClick={handleNewSiteClick} className="text-gray-600 hover:text-gray-900">
+                        Portofølje
                     </button>
                     {/* Icons */}
                     <a
