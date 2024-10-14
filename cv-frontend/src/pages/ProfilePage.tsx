@@ -41,7 +41,7 @@ const ProfilePage: React.FC = () => {
                         "Frontend: React, Typescript, Tailwind CSS",
                         "Backend: Java Springboot, C#",
                         "Database: MariaDB og MySQL, PostgreSQL",
-                        "Andre ferdigheter/interesser: Prosjektarbeid, Git, Unit testing, Problemløsning, Kunstig intelligens, Microsoft Azure, Cyber sikkerhet ",
+                        "Andre ferdigheter/interesser: Prosjektarbeid, Git, unit testing, problemløsning, kunstig intelligens, Microsoft Azure, cyber sikkerhet ",
                     ],
                 },
                 {
