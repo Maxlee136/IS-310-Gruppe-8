@@ -18,8 +18,12 @@ const Navbar: React.FC = () => {
     };
 
     const navigateToHome = () => {
-        navigate("/")
-    }
+        navigate("/");
+    };
+
+    const navigateToPortfolio = () => {
+        navigate("/portfolio");
+    };
 
     return (
         <nav className="bg-white shadow-md py-8">
@@ -33,6 +37,9 @@ const Navbar: React.FC = () => {
                     <a href="/" className="text-gray-600 hover:text-gray-900">
                         Hjem
                     </a>
+                    <button onClick={navigateToPortfolio} className="text-gray-600 hover:text-gray-900">
+                        Portfolio
+                    </button>
                     <button onClick={handleContactClick} className="text-gray-600 hover:text-gray-900">
                         Kontakt oss
                     </button>
