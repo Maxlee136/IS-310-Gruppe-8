@@ -43,10 +43,17 @@ const ProfilePage: React.FC = () => {
                     name: 'Andreas Mørkesdal',
                     role: 'Student',
                     image: '/andreas.jpg',
-                    description: `Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. 
-                       \n I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. Jeg er spesielt interessert i cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse.`,
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-mørkesdal-7a216a302/',
                     LinkToGitHub: 'https://github.com/Andreassm99',
+                    description: `Mitt fagbrev har gitt meg en solid forståelse av samspillet mellom teknologi og mennesker, og har lært meg å møte utfordringer med en løsningsorientert og serviceinnstilt tilnærming. Dette har styrket mine evner til å kommunisere og samarbeide effektivt, både med brukere og kolleger. 
+                       \n I løpet av studiet har jeg videreutviklet mine ferdigheter innen både frontend- og backend-utvikling, samtidig som jeg har opparbeidet meg verdifull erfaring som prosjektleder i flere prosjekter. Jeg er spesielt interessert i cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse.`,
+                    bulletPoints: [
+                        "Frontend: React, Tailwind CSS, TypeScript",
+                        "Backend: C#, Python",
+                        "Database: MariaDB, MySQL, PostgreSQL",
+                        "Andre ferdigheter/interesser: Kunstig Intelligens, cybersikkerhet, ledelse, fullstack-utvikling, Microsoft Azure, Docker",
+                    ],
+
                 },
                 {
 
