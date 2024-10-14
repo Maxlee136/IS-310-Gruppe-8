@@ -92,7 +92,7 @@ const HomePage: React.FC = () => {
 
                         <br/> <br/>
                         Gruppen har særlige ønsker om å jobbe med noe innen prosjektutvikling i sin helhet, og
-                        har erfaring med dette fra diverse prosjekterr på UIA, der vi har samarbeidet med Nøsted AS, Padlegleden, Egde og SmartSight.
+                        har erfaring med dette fra diverse prosjekter på UIA, der vi har samarbeidet med Nøsted AS, Padlegleden, Egde og SmartSight.
                         <br/><br/>
                     </h2>
                 </div>
