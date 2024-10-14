@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
             description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
-
+       
     ];
 
     const location = useLocation();
@@ -86,13 +86,13 @@ const HomePage: React.FC = () => {
                     </h1>
                     <h2 className="mt-6 text-18px text-slate-600 w-[75%]">
                         <br/>
-                        Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
-                        valgt sammensetningen av gruppens medlemmer med omhu, basert på de enkeltes ferdigheter.
-                        Ved dette er gruppen bygget opp av 2 som føler seg sterkest innen Frontend, 2 som yter
-                        best innen Backend, og en gruppeleder som er stødig på Fullstack.
+                    Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
+                        valgt sammensetningen av gruppens medlemmer med omhu, basert på den enkeltes ferdigheter.
+                        Vi består av en gruppeleder, som også er stødig på Fullstack, to med mest kompetanse innen Frontend, og to som yter best innen Backend.
+
                         <br/> <br/>
                         Gruppen har særlige ønsker om å jobbe med noe innen prosjektutvikling i sin helhet, og
-                        har erfaring med dette fra et tidligere prosjekt på bestilling av Nøsted AS.
+                        har erfaring med dette fra diverse prosjekter på UIA, der vi har samarbeidet med Nøsted AS, Padlegleden, Egde og SmartSight.
                         <br/><br/>
                     </h2>
                 </div>
