@@ -11,7 +11,7 @@ interface MemberCardProps {
 const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
     return (
         <Link to={`/profile/${member.id}`} className="w-full bg-lg rounded-lg shadow-lg border border-gray-200 overflow-hidden flex flex-col md:flex-row transition-transform transform hover:scale-105 hover:shadow-3xl">
-            <div className="w-full md:w-2/5 flex items-center justify-center">
+            <div className="w-full  flex items-center justify-center">
                 {/* Constrain the size of the image */}
                 <img className="object-center object-contain w-full max-w-xs h-auto" src={member.image} alt={`Profile of ${member.name}`} />
             </div>

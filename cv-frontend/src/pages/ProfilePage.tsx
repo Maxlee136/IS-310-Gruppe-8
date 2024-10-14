@@ -22,10 +22,10 @@ const ProfilePage: React.FC = () => {
                         'Jeg er gründer av to selskaper, hovedsakelig et SAAS selskap kallt Enthemed som er laget for nettbutikker i shopify sitt økosystem. ' +
                         'Med et grunder mindset ønsker jeg å bidra til innovasjon i bedriften deres gjennom bachelor prosjektet',
                     bulletPoints: [
-                        "Frontend: React, Tailwind, CSS",
-                        "Backend: C#, Php, Java",
-                        "Database: MariaDB, MySQL, Docker",
-                        "Andre ferdigheter/interesser: Git, problemløsning, innovasjon",
+                        "Frontend: React, Typescript, Tailwind CSS",
+                        "Backend: Java Springboot, C#",
+                        "Database: MariaDB og MySQL",
+                        "Andre ferdigheter/interesser: Prosjektarbeid, Git, Entreprenørskap  ",
                     ],
                 },
 
@@ -69,7 +69,7 @@ const ProfilePage: React.FC = () => {
                     LinkToLinkedIn: 'https://www.linkedin.com/in/andreas-wahl-iversen/',
                     LinkToGitHub: 'https://github.com/Andreaswiv',
                     bulletPoints: [
-                        "Frontend: React, Tailwind, CSS",
+                        "Frontend: React, Typescript, Tailwind CSS,",
                         "Backend: C#, Php, Java",
                         "Database: MariaDB, MySQL, Docker",
                         "Andre ferdigheter/interesser: Git, problemløsning, innovasjon",
