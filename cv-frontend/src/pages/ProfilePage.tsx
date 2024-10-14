@@ -88,11 +88,11 @@ const ProfilePage: React.FC = () => {
     return (
         <div>
             <Navbar />
-            <div className="container mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40">
-                <div className="grid justify-center items-center order-1 col-span-1">
-                    <img className="lg:h-96 md:h-96 h-60 rounded-full" src={member.image} alt="" />
+            <div className="container mx-auto md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-32">
+                <div className="mt-8 grid justify-center items-center order-1 col-span-1">
+                    <img className=" lg:h-96 md:h-96 h-60 rounded-full" src={member.image} alt="" />
                 </div>
-                <div className="mt-8 md:mt-0 lg:justify-end col-span-2 px-4 md:px-8">
+                <div className="mt-8 md:mt-0 lg:justify-end col-span-2 px-4 md:px-4">
                     <h1 className="text-4xl text-gray-800 text-center font-bold mb-2 relative inline-block">
                         {member.name}
                         <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-customGreen"></span>

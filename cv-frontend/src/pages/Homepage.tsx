@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
             name: 'Max Lee',
             role: 'Backend',
             image: '/max.jpg',
-            description: 'Jeg er en blid student med en passion for programmering. Jeg interesser meg særlig for å jobbe med AI prosjekter og har for tiden et grunder prosjekt innenfor SAAS.',
+            description: 'Jeg er en blid student med en passion for programmering. Jeg interesser meg særlig for å jobbe med AI prosjekter, fullstack utvikling og har for tiden et grunder prosjekt innenfor SAAS.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
             name: 'Andreas Mørkesdal',
             role: 'Fullstack/Prosjektleder',
             image: '/andreas.jpg',
-            description: 'Jeg er en IT-student med fagbrev som IKT-servicemedarbeider, og har en spesiell interesse for cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse',
+            description: 'Jeg er en IT-student med fagbrev som IKT-servicemedarbeider, og har en spesiell interesse for cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
             description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
-       
+
     ];
 
     const location = useLocation();
@@ -86,7 +86,7 @@ const HomePage: React.FC = () => {
                     </h1>
                     <h2 className="mt-6 text-18px text-slate-600 w-[75%]">
                         <br/>
-                    Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
+                        Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
                         valgt sammensetningen av gruppens medlemmer med omhu, basert på de enkeltes ferdigheter.
                         Ved dette er gruppen bygget opp av 2 som føler seg sterkest innen Frontend, 2 som yter
                         best innen Backend, og en gruppeleder som er stødig på Fullstack.
