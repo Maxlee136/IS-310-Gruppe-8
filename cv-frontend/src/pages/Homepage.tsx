@@ -1,6 +1,8 @@
 import MemberCard from "../components/MemberCard";
 import {Member} from "../Interface/Member";
-import React from "react";
+import React, {useEffect} from "react";
+import Navbar from "../components/Navbar";
+import {useLocation} from "react-router-dom";
 
 const HomePage: React.FC = () => {
     const members: Member[] = [
@@ -9,7 +11,7 @@ const HomePage: React.FC = () => {
             name: 'Max Lee',
             role: 'Backend',
             image: '/max.jpg',
-            description: 'Jeg er en blid student med en passion for programmering. Driver eget firma og jobber på Elkjøp.',
+            description: 'Jeg er en blid student med en passion for programmering. Jeg interesser meg særlig for å jobbe med AI prosjekter, fullstack utvikling og har for tiden et grunder prosjekt innenfor SAAS.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -25,7 +27,7 @@ const HomePage: React.FC = () => {
             name: 'Andreas Mørkesdal',
             role: 'Fullstack/Prosjektleder',
             image: '/andreas.jpg',
-            description: 'Jeg er en IT student med fagbrev som IKT-servicemedarbeider.',
+            description: 'Jeg er en IT-student med fagbrev som IKT-servicemedarbeider, og har en spesiell interesse for cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -44,17 +46,30 @@ const HomePage: React.FC = () => {
             description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
-
+       
     ];
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === "#Kontakt") {
+            const contactSection = document.getElementById("Kontakt");
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
     return (
         <>
+            <Navbar />
             {/* Full-page portrait section */}
             <div className="relative w-full h-screen">
                 <img
                     src="/gruppebilde.jpg"
                     alt="Student Portrait"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-top"
                 />
+
                 <div
                     className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
                     <h1 className="text-white text-4xl md:text-6xl font-bold">GRUPPE 8</h1>
@@ -90,7 +105,7 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
             {/* Section: Contact Information */}
-            <section className="bg-gray-100 py-12">
+            <section id="Kontakt" className="bg-gray-100 py-12">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 text-center">
                     <div className="relative inline-block">
                         <h2 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 mb-2 relative">
@@ -100,7 +115,7 @@ const HomePage: React.FC = () => {
                     </div>
 
                     <p className="text-lg text-gray-700 mb-4">
-                        <br/>
+                        <br />
                         Vi ser frem til å høre fra deg! Ta gjerne kontakt med oss for mer informasjon eller spørsmål.
                     </p>
                     <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-6">
