@@ -17,11 +17,15 @@ const Navbar: React.FC = () => {
         }
     };
 
+    const navigateToHome = () => {
+        navigate("/")
+    }
+
     return (
         <nav className="bg-white shadow-md py-8">
             <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
                 {/* Left section: Group name */}
-                <div className="text-2xl font-bold text-gray-800">
+                <div onClick={navigateToHome} className="text-2xl cursor-pointer font-bold text-gray-800">
                     Gruppe 8
                 </div>
                 {/* Right section: Links and Icons */}
