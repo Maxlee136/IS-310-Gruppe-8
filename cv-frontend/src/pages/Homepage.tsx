@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
         <>
             {/* Full-page portrait section */}
 
-
+    <Navbar />
     <div className="relative w-full">
             <img
                 src="/gruppebilde.jpg"
