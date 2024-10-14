@@ -37,6 +37,12 @@ const ProfilePage: React.FC = () => {
                     description: 'Hei! Jeg er IT-student ved Universitetet i Agder (UiA), hvor jeg har utviklet et bredt spekter av kunnskap innenfor IT. Jeg har spesielt god kompetanse innen unittesting og backend-utvikling, men er også svært motivert for å lære og utforske andre områder.',
                     LinkToLinkedIn: ' https://www.linkedin.com/in/jeppe-strømberg-93110b26b/',
                     LinkToGitHub: 'https://github.com/Jeppess123',
+                    bulletPoints: [
+                        "Frontend: React, Typescript, Tailwind CSS",
+                        "Backend: Java Springboot, C#",
+                        "Database: MariaDB og MySQL",
+                        "Andre ferdigheter/interesser: Prosjektarbeid, Git, Unit testing, Problemløsning ",
+                    ],
                 },
                 {
                     id: 3,
