@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
             name: 'Andreas Mørkesdal',
             role: 'Fullstack/Prosjektleder',
             image: '/andreas.jpg',
-            description: 'Jeg er en IT-student med fagbrev som IKT-servicemedarbeider, og har en spesiell interesse for cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse',
+            description: 'Jeg er en IT-student med fagbrev som IKT-servicemedarbeider, og har en spesiell interesse for cybersikkerhet, full-stack utvikling, kunstig intelligens og ledelse.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
