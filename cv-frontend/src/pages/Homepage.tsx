@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
             description: 'Jeg er sterkest på samarbeid, problemløsning og å skape brukervennlige løsninger.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
-       
+
     ];
 
     const location = useLocation();
@@ -61,21 +61,21 @@ const HomePage: React.FC = () => {
     }, [location]);
     return (
         <>
-            <Navbar />
             {/* Full-page portrait section */}
-            <div className="relative w-full h-screen">
-                <img
-                    src="/gruppebilde.jpg"
-                    alt="Student Portrait"
-                    className="absolute inset-0 w-full h-full object-cover object-top"
-                />
 
-                <div
-                    className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
-                    <h1 className="text-white text-4xl md:text-6xl font-bold">GRUPPE 8</h1>
-                    <p className="text-white mt-2 text-lg md:text-xl">Bachelor gruppe</p>
-                </div>
-            </div>
+
+    <div className="relative w-full">
+            <img
+                src="/gruppebilde.jpg"
+                alt="Student Portrait"
+                className="w-full h-auto"
+            />
+        <div
+            className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
+            <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold">GRUPPE 8</h1>
+            <p className="text-white mt-2 text-base sm:text-lg md:text-xl">Bachelor gruppe</p>
+        </div>
+    </div>
 
             {/* Section: About the group */}
             <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 mt-10">
