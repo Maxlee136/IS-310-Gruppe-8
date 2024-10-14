@@ -76,13 +76,13 @@ const HomePage: React.FC = () => {
     </div>
 
             {/* Section: About the group */}
-            <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 mt-10">
+            <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 mt-10 pb-10">
                 <div className="text-start pb-12">
-                    <h1 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 relative inline-block">
+                    <h1 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 relative inline-block pl-2">
                         Mer om oss
-                        <span className="absolute -bottom-4 left-0.5 w-44 h-0.5 bg-customGreen"></span>
+                        <span className="absolute -bottom-1 left-2 w-56 h-0.5 bg-customGreen"></span>
                     </h1>
-                    <h2 className="mt-6 text-18px text-slate-600 w-[75%]">
+                    <h2 className="mt-6 text-18px text-slate-600 w-[75%] pl-2">
                         <br/>
                     Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
                         valgt sammensetningen av gruppens medlemmer med omhu, basert på den enkeltes ferdigheter.
