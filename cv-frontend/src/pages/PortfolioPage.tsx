@@ -36,6 +36,14 @@ const PortfolioPage = () => {
             image: '/smartsight.jpg',
             description: 'Smartsight is a cybersecurity tool that detects and prevents security threats. Our team was involved in developing the backend architecture to ensure data protection and enhance threat detection.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
+        },
+        {
+            id: 5,
+            name: 'Egde',
+            role: 'KI-prosjekt',
+            image: '/egde.png',
+            description: 'Praksisprosjekt hos Egde der vi har jobbet med Microsoft Azure, deployment og justering av KI-modeller samt RAG-modell deployment.',
+            clickOnCard: 'Klikk på meg for mer informasjon!',
         }
     ];
 

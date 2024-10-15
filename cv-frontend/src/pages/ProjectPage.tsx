@@ -22,7 +22,6 @@ const ProjectPage: React.FC = () => {
                         "Inventory Management Optimization",
                         "Full Backend Development in Java and Spring Boot",
                     ],
-                    linkToGitHub: 'https://github.com/nosted',
                 },
                 {
                     id: 2,
@@ -36,7 +35,6 @@ const ProjectPage: React.FC = () => {
                         "Fullstack Development in React and Node.js",
                         "HIPAA-compliant Infrastructure",
                     ],
-                    linkToGitHub: 'https://github.com/enthemed',
                 },
                 {
                     id: 3,
@@ -50,7 +48,6 @@ const ProjectPage: React.FC = () => {
                         "Frontend in React and Tailwind CSS",
                         "Payment Integration with Stripe",
                     ],
-                    linkToGitHub: 'https://github.com/padlegleden',
                 },
                 {
                     id: 4,
@@ -64,7 +61,19 @@ const ProjectPage: React.FC = () => {
                         "Backend Development in Python and Django",
                         "AI-driven Threat Analysis",
                     ],
-                    linkToGitHub: 'https://github.com/smartsight',
+                },
+                {
+                    id: 5,
+                    name: 'Egde',
+                    role: 'KI-prosjekt',
+                    image: '/egde.png',
+                    description:
+                        'Prosjektet involverer arbeid med Microsoft Azure, mer spesifikt Azure AI Studios, AI search og AzureSQL. Målet er utarbeidelse av en fungerende Chatbot, arbeidet har dermed inneholdt bruk av KI-modeller samt arbeid med RAG (Retrieval-augmented generation).',
+                    bulletPoints: [
+                        "Deployment og justering av KI-modeller",
+                        "RAG (Retrieval-augmented generation)",
+                        "Microsoft Azure",
+                    ],
                 },
             ];
 
