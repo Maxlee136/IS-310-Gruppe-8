@@ -108,7 +108,7 @@ const ProjectPage: React.FC = () => {
                     role: 'arduino-prosjekt',
                     image: '/arduino.png',
                     description:
-                        'Vi utvikler en en egen treningsapp hvor brukeren kobler til en ekstern enhet til muskel. Applikasjonen måler dermed muskelaktivitet og gir brukeren informasjon om egen innsats på trening.',
+                        'Vi utvikler en egen treningsapp hvor brukeren kobler til en ekstern enhet til muskel. Applikasjonen måler dermed muskelaktivitet og gir brukeren informasjon om egen innsats på trening.',
                     bulletPoints: [
                         "Internet of things",
                         "Arduino",
