@@ -32,9 +32,9 @@ const PortfolioPage = () => {
         {
             id: 4,
             name: 'Smartsight',
-            role: 'Cybersecurity',
+            role: 'Prototype',
             image: '/uia.png',
-            description: 'SmartSight er et prosjekt som har som mål å lage smartbriller til personer med makuladegenerasjon (MD) og retinitis pigmentosa (RP), slik at de skal få et hjelpemiddel som kan gjøre hverdagen deres enklere. Teamet vårt hadde i oppgave å lage et forslag til hvordan dette kunne løses på en måte som både skulle være skreddersydd for brukeren og ikke skulle kunne oppleves som stigmatiserende.',
+            description: 'SmartSight er et prosjekt som har som mål å lage smartbriller til personer med makuladegenerasjon (MD) og retinitis pigmentosa (RP), slik at de skal få et hjelpemiddel som kan gjøre hverdagen deres enklere.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
