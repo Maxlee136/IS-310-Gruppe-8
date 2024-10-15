@@ -44,6 +44,14 @@ const PortfolioPage = () => {
             image: '/egde.png',
             description: 'Praksisprosjekt hos Egde der vi har jobbet med Microsoft Azure, deployment og justering av KI-modeller samt RAG-modell deployment.',
             clickOnCard: 'Klikk på meg for mer informajon om Egde prosjektet!',
+        },
+        {
+            id: 6,
+            name: 'IOT-prosjekt',
+            role: 'arduino-prosjekt',
+            image: '/arduino.png',
+            description: 'Utvikling av applikasjon for måling av muskelaktivitet, og repetisjonstelling.  ',
+            clickOnCard: 'Klikk på meg for mer informajon om IOT prosjektet!',
         }
     ];
 
