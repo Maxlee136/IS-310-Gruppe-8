@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                         Hjem
                     </a>
                     <button onClick={navigateToPortfolio} className="text-gray-600 hover:text-gray-900">
-                        Portfolio
+                        Portefølje
                     </button>
                     <button onClick={handleContactClick} className="text-gray-600 hover:text-gray-900">
                         Kontakt oss
