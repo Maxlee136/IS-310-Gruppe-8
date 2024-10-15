@@ -99,6 +99,20 @@ const ProjectPage: React.FC = () => {
                         "Microsoft Azure",
                     ],
                 },
+                {
+                    id: 6,
+                    name: 'IOT-prosjekt',
+                    attendees:'Alle i gruppen',
+                    role: 'arduino-prosjekt',
+                    image: '/arduino.png',
+                    description:
+                        'Vi utvikler en en egen treningsapp hvor brukeren kobler til en ekstern enhet til muskel. Applikasjonen måler dermed muskelaktivitet og gir brukeren informasjon om egen innsats på trening.',
+                    bulletPoints: [
+                        "Internet of things",
+                        "Arduino",
+                        "NextJS applikasjon",
+                    ],
+                },
             ];
 
             const selectedProject = projects.find(p => p.id.toString() === id);
