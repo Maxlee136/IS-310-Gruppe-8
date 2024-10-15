@@ -84,6 +84,20 @@ const ProjectPage: React.FC = () => {
                         "AI-driven Threat Analysis",
                     ],
                 },
+                {
+                    id: 5,
+                    name: 'Egde',
+                    attendees:'Andreas Mørkesdal, Max Lee og Jeppe Strømberg',
+                    role: 'KI-prosjekt',
+                    image: '/egde.png',
+                    description:
+                        'Prosjektet involverer arbeid med Microsoft Azure, mer spesifikt Azure AI Studios, AI search og AzureSQL. Målet er utarbeidelse av en fungerende Chatbot, arbeidet har dermed inneholdt bruk av KI-modeller samt arbeid med RAG (Retrieval-augmented generation).',
+                    bulletPoints: [
+                        "Deployment og justering av KI-modeller",
+                        "RAG (Retrieval-augmented generation)",
+                        "Microsoft Azure",
+                    ],
+                },
             ];
 
             const selectedProject = projects.find(p => p.id.toString() === id);
