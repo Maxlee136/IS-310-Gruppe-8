@@ -2,7 +2,7 @@ import MemberCard from "../components/MemberCard";
 import {Member} from "../Interface/Member";
 import React, {useEffect} from "react";
 import Navbar from "../components/Navbar";
-import {useLocation} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 const HomePage: React.FC = () => {
     const members: Member[] = [
@@ -50,6 +50,8 @@ const HomePage: React.FC = () => {
     ];
 
     const location = useLocation();
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         if (location.hash === "#Kontakt") {
@@ -59,6 +61,12 @@ const HomePage: React.FC = () => {
             }
         }
     }, [location]);
+
+
+    const navigateToPortfolio = () => {
+        navigate("/portfolio");
+    };
+
     return (
         <>
             {/* Full-page portrait section */}
@@ -84,15 +92,21 @@ const HomePage: React.FC = () => {
                     </h1>
                     <h2 className="mt-6 text-18px text-slate-600 w-[75%] pl-2">
                         <br/>
-                    Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
+                        Vi er en gruppe elever ved UiAs Bachelorprogram for IT og Informasjonssystemer. Vi har
                         valgt sammensetningen av gruppens medlemmer med omhu, basert på den enkeltes ferdigheter.
-                        Vi består av en gruppeleder, som også er stødig på Fullstack, to med mest kompetanse innen Frontend, og to som yter best innen Backend.
-
+                        Vi består av en gruppeleder, som også er stødig på Fullstack, to med mest kompetanse innen
+                        Frontend, og to som yter best innen Backend.
                         <br/> <br/>
                         Gruppen har særlige ønsker om å jobbe med noe innen prosjektutvikling i sin helhet, og
-                        har erfaring med dette fra diverse prosjekter på UIA, der vi har samarbeidet med Nøsted AS, Padlegleden, Egde og SmartSight.
+                        har erfaring med dette fra diverse prosjekter på UIA, der vi har samarbeidet med Nøsted AS,
+                        Padlegleden, Egde og SmartSight.
                         <br/><br/>
                     </h2>
+                    <button onClick={navigateToPortfolio}
+                        className="bg-gradient-to-r from-green-200 to-green-400 text-white font-bold py-2 px-6 rounded-full hover:from-green-300 hover:to-green-500 transition-all">
+                        Les mer om våre prosjekter
+                    </button>
+
                 </div>
 
                 {/* Grid of Member Cards */}
