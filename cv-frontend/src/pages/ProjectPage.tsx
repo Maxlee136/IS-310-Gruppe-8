@@ -14,7 +14,7 @@ const ProjectPage: React.FC = () => {
                     id: 1,
                     name: 'Nøsted',
                     role: 'Fullstack',
-                    image: '/nostedlogo.jpg',
+                    image: '/nostedlogo2.jpg',
                     description:
                         'Gjennom UIA fikk vi utviklet en webapplikasjon for håndtering av service saker. Prosjektet ga medlemmene i gruppen en innledning i fullstack utvikling. Gjennom prosjektet lærte vi hvordan en jobber effektivt som et team, leder et prosjekt og gjør dette innen en satt frist',
                     bulletPoints: [

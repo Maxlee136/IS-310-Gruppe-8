@@ -10,7 +10,7 @@ const PortfolioPage = () => {
             name: 'Nøsted',
             role: 'Backend',
             image: '/nostedlogo.jpg',
-            description: 'Gjennom UIA fikk vi utviklet en webapplikasjon for håndtering av service saker. Prosjektet ga medlemmene i gruppen en innledning i fullstack utvikling. Gjennom prosjektet lærte vi å jobbe i team',
+            description: 'I 3.semester utviklet gruppen en webapplikasjon for bedriften Nøsted AS, prosjektet ga oss innsikt i SCRUM, fullstack utvikling og samarbeid rundt et prosjekt',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
@@ -18,7 +18,7 @@ const PortfolioPage = () => {
             name: 'Enthemed',
             role: 'Fullstack',
             image: '/enthemed.png',
-            description: 'Enthemed er en startup med fokus på å gjøre det enkelt å starte egen nettbutikk.',
+            description: 'Enthemed er en SAAS løsning med fokus på å gjøre det enkelt å starte egen nettbutikk.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         },
         {
