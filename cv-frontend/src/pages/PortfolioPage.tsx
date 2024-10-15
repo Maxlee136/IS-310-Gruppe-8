@@ -34,7 +34,7 @@ const PortfolioPage = () => {
             name: 'Smartsight',
             role: 'Cybersecurity',
             image: '/uia.png',
-            description: 'Smartsight is a cybersecurity tool that detects and prevents security threats. Our team was involved in developing the backend architecture to ensure data protection and enhance threat detection.',
+            description: 'SmartSight er et prosjekt som har som mål å lage smartbriller til personer med makuladegenerasjon (MD) og retinitis pigmentosa (RP), slik at de skal få et hjelpemiddel som kan gjøre hverdagen deres enklere. Teamet vårt hadde i oppgave å lage et forslag til hvordan dette kunne løses på en måte som både skulle være skreddersydd for brukeren og ikke skulle kunne oppleves som stigmatiserende.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         }
     ];
