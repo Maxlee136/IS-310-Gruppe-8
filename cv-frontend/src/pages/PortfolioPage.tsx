@@ -50,7 +50,7 @@ const PortfolioPage = () => {
     return (
         <><Navbar/>
             <div className="max-w-6xl mx-auto mt-20">
-                <h1 className="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 relative inline-block">
+                <h1 className="pl-4 font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-900 relative inline-block">
                     Prosjekter gruppen har deltatt i
                     <span className="absolute -bottom-4 left-0.5 w-full h-0.5 bg-customGreen"></span>
                 </h1>
