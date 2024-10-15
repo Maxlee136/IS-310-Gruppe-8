@@ -74,10 +74,10 @@ const ProjectPage: React.FC = () => {
                     id: 4,
                     name: 'Smartsight',
                     attendees: 'Jeppe Strømberg og Andreas Iversen',
-                    role: 'Cybersecurity',
+                    role: 'Prototype',
                     image: '/uia.png',
                     description:
-                        'Da vi jobbet med SmartSight hadde vi ganske frie tøyler for å komme med forslag til hvordan et endelig produkt ville se ut. Det gjorde at vi måtte komme med mange idéer på egenhånd. Vi opplevde at for å kunne skape et best mulig ferdig produkt måtte vi legge inn mye innsats i å gjennomføre flere intervjuer og gjøre gode markedsundersøkelser. Grunnet dette fikk vi en god forståelse for prosessen til å skape et produkt med formål og som har en verdi hos kunder.',
+                        ' Teamet vårt hadde i oppgave å lage et forslag til hvordan dette kunne løses på en måte som både skulle være skreddersydd for brukeren og ikke skulle kunne oppleves som stigmatiserende. Da vi jobbet med SmartSight hadde vi ganske frie tøyler for å komme med forslag til hvordan et endelig produkt ville se ut. Det gjorde at vi måtte komme med mange idéer på egenhånd. Vi opplevde at for å kunne skape et best mulig ferdig produkt måtte vi legge inn mye innsats i å gjennomføre flere intervjuer og gjøre gode markedsundersøkelser. Grunnet dette fikk vi en god forståelse for prosessen til å skape et produkt med formål og som har en verdi hos kunder.',
                     bulletPoints: [
                         "Markedsundersøkelser",
                         "Idéskaping",
