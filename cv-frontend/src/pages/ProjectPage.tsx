@@ -77,12 +77,13 @@ const ProjectPage: React.FC = () => {
                     role: 'Cybersecurity',
                     image: '/uia.png',
                     description:
-                        'Smartsight is a cybersecurity tool that detects and prevents security threats. Our team was involved in developing the backend architecture to ensure data protection and enhance threat detection.',
+                        'Da vi jobbet med SmartSight hadde vi ganske frie tøyler for å komme med forslag til hvordan et endelig produkt ville se ut. Det gjorde at vi måtte komme med mange idéer på egenhånd. Vi opplevde at for å kunne skape et best mulig ferdig produkt måtte vi legge inn mye innsats i å gjennomføre flere intervjuer og gjøre gode markedsundersøkelser. Grunnet dette fikk vi en god forståelse for prosessen til å skape et produkt med formål og som har en verdi hos kunder.',
                     bulletPoints: [
-                        "Cybersecurity Threat Detection",
-                        "Backend Development in Python and Django",
-                        "AI-driven Threat Analysis",
+                        "Markedsundersøkelser",
+                        "Idéskaping",
+                        "Figma prototype",
                     ],
+
                 },
                 {
                     id: 5,
@@ -141,6 +142,7 @@ const ProjectPage: React.FC = () => {
                                         {point}
                                     </li>
                                 ))}
+
                             </ul>
                         </div>
                     )}
