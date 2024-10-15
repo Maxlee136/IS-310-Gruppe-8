@@ -59,7 +59,6 @@ const ProfilePage: React.FC = () => {
                         "Database: MariaDB, MySQL, PostgreSQL",
                         "Andre ferdigheter/interesser: Kunstig Intelligens, cybersikkerhet, ledelse, fullstack-utvikling, Microsoft Azure, Docker",
                     ],
-
                 },
                 {
 
