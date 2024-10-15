@@ -33,7 +33,7 @@ const PortfolioPage = () => {
             id: 4,
             name: 'Smartsight',
             role: 'Cybersecurity',
-            image: '/smartsight.jpg',
+            image: '/uia.png',
             description: 'Smartsight is a cybersecurity tool that detects and prevents security threats. Our team was involved in developing the backend architecture to ensure data protection and enhance threat detection.',
             clickOnCard: 'Klikk på meg for mer informasjon!',
         }
