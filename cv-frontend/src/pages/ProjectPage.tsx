@@ -13,14 +13,14 @@ const ProjectPage: React.FC = () => {
                 {
                     id: 1,
                     name: 'Nøsted',
-                    role: 'Backend',
-                    image: '/nosted.jpg',
+                    role: 'Fullstack',
+                    image: '/nostedlogo.jpg',
                     description:
-                        'Nøsted focuses on providing innovative solutions for warehouse automation. Our work involved developing an AI-powered system to optimize inventory management and reduce human error.',
+                        'Gjennom UIA fikk vi utviklet en webapplikasjon for håndtering av service saker. Prosjektet ga medlemmene i gruppen en innledning i fullstack utvikling. Gjennom prosjektet lærte vi hvordan en jobber effektivt som et team, leder et prosjekt og gjør dette innen en satt frist',
                     bulletPoints: [
-                        "AI-Powered Automation",
-                        "Inventory Management Optimization",
-                        "Full Backend Development in Java and Spring Boot",
+                        "MVC Rammeverk",
+                        "Scrum, C#, HTML, CSS ",
+                        "Login og brukerautorisering",
                     ],
                     linkToGitHub: 'https://github.com/nosted',
                 },
@@ -30,25 +30,24 @@ const ProjectPage: React.FC = () => {
                     role: 'Fullstack',
                     image: '/enthemed.png',
                     description:
-                        'Enthemed is a healthcare startup revolutionizing patient care through a telemedicine platform. We contributed to building a full-stack system for real-time consultations between doctors and patients.',
+                        'Enthemed er en webapplikasjon som gjør det enkelt å starte sin egen nettbutikk. Prosjektet er bygget på shopify sin plattform og tilbyr ferdiglagde nettbutikk maler og såkalte powerups som gir nettbutikken utvidet funksjonalitet',
                     bulletPoints: [
-                        "Real-time Telemedicine Platform",
-                        "Fullstack Development in React and Node.js",
-                        "HIPAA-compliant Infrastructure",
+                        "Fullstack utvikling",
+                        "Jobbe i team",
+                        "Skytjenester",
                     ],
-                    linkToGitHub: 'https://github.com/enthemed',
                 },
                 {
                     id: 3,
                     name: 'Padlegleden',
                     role: 'Frontend',
-                    image: '/padlegleden.jpg',
+                    image: '/padlegleden.png',
                     description:
-                        'Padlegleden is a platform that helps people book kayaking adventures. We designed an intuitive user interface to enhance the customer experience while exploring and booking various outdoor activities.',
+                        'Vi hjalp padlegleden å utvikle en opplærings plattform på de sin nettside i faget IS-112. Her fikk vi introduksjon i konsepter som blant annet design thinking og hvordan det er å jobbe i team og oppfylle kundens ønske. ',
                     bulletPoints: [
-                        "UI/UX Design for Booking Platform",
-                        "Frontend in React and Tailwind CSS",
-                        "Payment Integration with Stripe",
+                        "UI/UX Design for kursplattform",
+                        "Frontend utviklet ved bruk a squarespace",
+                        "Intervjuer med kunder for å samle data",
                     ],
                     linkToGitHub: 'https://github.com/padlegleden',
                 },
@@ -96,7 +95,7 @@ const ProjectPage: React.FC = () => {
                     <br />
                     {project.bulletPoints && (
                         <div className="mt-4 px-4 md:px-8">
-                            <strong className="text-gray-800">Project Highlights</strong>
+                            <strong className="text-gray-800">Prosjekt høydepunkter</strong>
                             <ul className="list-disc list-inside text-gray-800 mt-2">
                                 {project.bulletPoints.map((point, index) => (
                                     <li key={index} className="py-1">
@@ -108,14 +107,6 @@ const ProjectPage: React.FC = () => {
                     )}
                     <br />
                     <div className="mt-4 flex justify-center md:justify-start">
-                        <a href={project.linkToGitHub} target="_blank" rel="noopener noreferrer" className="mr-4">
-                            <img
-                                src="/github-logo.png"
-                                alt="GitHub Project"
-                                style={{ width: '7.5rem', height: '4.5rem' }}
-                                className="inline"
-                            />
-                        </a>
                     </div>
                 </div>
             </div>
