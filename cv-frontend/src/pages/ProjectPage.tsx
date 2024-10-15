@@ -87,6 +87,7 @@ const ProjectPage: React.FC = () => {
                 {
                     id: 5,
                     name: 'Egde',
+                    attendees:'Andreas Mørkesdal, Max Lee og Jeppe Strømberg',
                     role: 'KI-prosjekt',
                     image: '/egde.png',
                     description:
