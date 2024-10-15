@@ -60,7 +60,7 @@ const ProjectPage: React.FC = () => {
                     name: 'Padlegleden',
                     attendees: 'Max Lee og Andreas Mørkesdal',
                     role: 'Frontend',
-                    image: '/padlegleden.png',
+                    image: '/padlegledenlogo.png',
                     description:
                         'Vi hjalp padlegleden å utvikle en opplærings plattform på de sin nettside i faget IS-112. Her fikk vi introduksjon i konsepter som blant annet design thinking og hvordan det er å jobbe i team og oppfylle kundens ønske. ',
                     bulletPoints: [
