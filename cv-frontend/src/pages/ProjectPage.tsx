@@ -13,47 +13,69 @@ const ProjectPage: React.FC = () => {
                 {
                     id: 1,
                     name: 'Nøsted',
-                    role: 'Backend',
-                    image: '/nosted.jpg',
+                    attendees: 'Alle i gruppen (to separate prosjekter)',
+                    role: 'Fullstack',
+                    image: '/nostedlogo2.jpg',
                     description:
-                        'Nøsted focuses on providing innovative solutions for warehouse automation. Our work involved developing an AI-powered system to optimize inventory management and reduce human error.',
+                        'Gjennom UIA fikk vi utviklet en webapplikasjon for håndtering av service saker. Prosjektet ga medlemmene i gruppen en innledning i fullstack utvikling. Gjennom prosjektet lærte vi hvordan en jobber effektivt som et team, leder et prosjekt og gjør dette innen en satt frist',
                     bulletPoints: [
-                        "AI-Powered Automation",
-                        "Inventory Management Optimization",
-                        "Full Backend Development in Java and Spring Boot",
+                        "MVC Rammeverk",
+                        "Scrum, C#, HTML, CSS ",
+                        "Login og brukerautorisering",
+                    ],
+                    linkToGitHub: 'https://github.com/nosted',
+                    videos: [
+                        {
+                            url: "https://fast.wistia.com/embed/medias/54tv0rkgxc",
+                            title: "Nøsted Gruppe 3",
+                        },
+                        {
+                            url: "https://fast.wistia.com/embed/medias/kve99qyw8l",
+                            title: "Nøsted Video Gruppe 2",
+                        },
                     ],
                 },
                 {
                     id: 2,
                     name: 'Enthemed',
                     role: 'Fullstack',
+                    attendees: 'Max Lee',
                     image: '/enthemed.png',
                     description:
-                        'Enthemed is a healthcare startup revolutionizing patient care through a telemedicine platform. We contributed to building a full-stack system for real-time consultations between doctors and patients.',
+                        'Enthemed er en webapplikasjon som gjør det enkelt å starte sin egen nettbutikk. Prosjektet er bygget på shopify sin plattform og tilbyr ferdiglagde nettbutikk maler og såkalte powerups som gir nettbutikken utvidet funksjonalitet',
                     bulletPoints: [
-                        "Real-time Telemedicine Platform",
-                        "Fullstack Development in React and Node.js",
-                        "HIPAA-compliant Infrastructure",
+                        "Fullstack utvikling",
+                        "Jobbe i team",
+                        "Skytjenester",
+                    ],
+                    videos: [
+                        {
+                            url: "https://fast.wistia.com/embed/medias/6i0e9sup9g",
+                            title: "Enthemed Intro video",
+                        },
                     ],
                 },
                 {
                     id: 3,
                     name: 'Padlegleden',
+                    attendees: 'Max Lee og Andreas Mørkesdal',
                     role: 'Frontend',
-                    image: '/padlegleden.jpg',
+                    image: '/padlegleden.png',
                     description:
-                        'Padlegleden is a platform that helps people book kayaking adventures. We designed an intuitive user interface to enhance the customer experience while exploring and booking various outdoor activities.',
+                        'Vi hjalp padlegleden å utvikle en opplærings plattform på de sin nettside i faget IS-112. Her fikk vi introduksjon i konsepter som blant annet design thinking og hvordan det er å jobbe i team og oppfylle kundens ønske. ',
                     bulletPoints: [
-                        "UI/UX Design for Booking Platform",
-                        "Frontend in React and Tailwind CSS",
-                        "Payment Integration with Stripe",
+                        "UI/UX Design for kursplattform",
+                        "Frontend utviklet ved bruk a squarespace",
+                        "Intervjuer med kunder for å samle data",
                     ],
+                    linkToGitHub: 'https://github.com/padlegleden',
                 },
                 {
                     id: 4,
                     name: 'Smartsight',
+                    attendees: 'Jeppe Strømberg og Andreas Iversen',
                     role: 'Cybersecurity',
-                    image: '/smartsight.jpg',
+                    image: '/uia.png',
                     description:
                         'Smartsight is a cybersecurity tool that detects and prevents security threats. Our team was involved in developing the backend architecture to ensure data protection and enhance threat detection.',
                     bulletPoints: [
@@ -89,7 +111,7 @@ const ProjectPage: React.FC = () => {
     return (
         <div>
             <Navbar />
-            <div className="container mx-auto md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-32">
+            <div className="container mx-auto md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-12">
                 <div className="mt-8 grid justify-center items-center order-1 col-span-1">
                     <img className="lg:h-96 md:h-96 h-60 rounded-lg" src={project.image} alt="" />
                 </div>
@@ -98,14 +120,20 @@ const ProjectPage: React.FC = () => {
                         {project.name}
                         <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-customGreen"></span>
                     </h1>
-                    <br/><br/>
+
+                    <div className="text-left mt-4">
+                        <span className="font-bold text-black">Deltakere:</span>
+                        <span className="ml-2 text-gray-800">{project.attendees}</span>
+                    </div>
+
+                    <br /><br />
                     <p className="text-18px text-gray-800 text-left w-[85%] leading-relaxed whitespace-pre-line">
                         {project.description}
                     </p>
                     <br />
                     {project.bulletPoints && (
                         <div className="mt-4 px-4 md:px-8">
-                            <strong className="text-gray-800">Project Highlights</strong>
+                            <strong className="text-gray-800">Prosjekt høydepunkter</strong>
                             <ul className="list-disc list-inside text-gray-800 mt-2">
                                 {project.bulletPoints.map((point, index) => (
                                     <li key={index} className="py-1">
@@ -115,19 +143,30 @@ const ProjectPage: React.FC = () => {
                             </ul>
                         </div>
                     )}
-                    <br />
-                    <div className="mt-4 flex justify-center md:justify-start">
-                        <a href={project.linkToGitHub} target="_blank" rel="noopener noreferrer" className="mr-4">
-                            <img
-                                src="/github-logo.png"
-                                alt="GitHub Project"
-                                style={{ width: '7.5rem', height: '4.5rem' }}
-                                className="inline"
-                            />
-                        </a>
-                    </div>
                 </div>
             </div>
+
+            {/* Optional Video Section */}
+            {project.videos && project.videos.length > 0 && (
+                <div className="w-full flex justify-center mt-10">
+                    <div className="w-full max-w-4xl">
+                        {project.videos.map((video, index) => (
+                            <div key={index} className="relative w-full h-auto mb-8">
+                                <h2 className="mb-4 font-bold text-center text-4xl">{video.title}</h2>
+                                <div className="relative w-full h-0 pb-[56.25%]">
+                                    <iframe
+                                        src={video.url}
+                                        title={video.title}
+                                        className="wistia_swatch absolute top-0 left-0 w-full h-full"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 };
