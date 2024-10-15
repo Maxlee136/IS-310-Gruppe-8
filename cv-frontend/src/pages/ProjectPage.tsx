@@ -77,14 +77,16 @@ const ProjectPage: React.FC = () => {
                     role: 'Prototype',
                     image: '/uia.png',
                     description:
-                        ' Teamet vårt hadde i oppgave å lage et forslag til hvordan dette kunne løses på en måte som både skulle være skreddersydd for brukeren og ikke skulle kunne oppleves som stigmatiserende. Da vi jobbet med SmartSight hadde vi ganske frie tøyler for å komme med forslag til hvordan et endelig produkt ville se ut. Det gjorde at vi måtte komme med mange idéer på egenhånd. Vi opplevde at for å kunne skape et best mulig ferdig produkt måtte vi legge inn mye innsats i å gjennomføre flere intervjuer og gjøre gode markedsundersøkelser. Grunnet dette fikk vi en god forståelse for prosessen til å skape et produkt med formål og som har en verdi hos kunder.',
+                        `Teamet vårt hadde i oppgave å lage et forslag til hvordan smartbriller til personer med MD og RP skulle løses på en måte som både skal være skreddersydd for brukeren og som ikke kan oppleves som stigmatiserende.
+      \nDa vi jobbet med SmartSight hadde vi ganske frie tøyler for å komme med forslag til hvordan et endelig produkt ville se ut. Det gjorde at vi måtte komme med mange idéer på egenhånd. Vi opplevde at for å kunne skape et best mulig ferdig produkt måtte vi legge inn mye innsats i å gjennomføre flere intervjuer og gjøre gode markedsundersøkelser. Via disse utfordringene fikk vi en god forståelse for prosessen til å skape et produkt med formål og som har en verdi hos kunder.`,
                     bulletPoints: [
                         "Markedsundersøkelser",
                         "Idéskaping",
                         "Figma prototype",
                     ],
 
-                },
+
+            },
                 {
                     id: 5,
                     name: 'Egde',
