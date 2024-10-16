@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
         <nav className="bg-white shadow-md py-8">
             <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
                 {/* Left section: Group name */}
-                <div onClick={navigateToHome} className="text-2xl cursor-pointer font-bold text-gray-800">
+                <div onClick={navigateToHome} className="text-lg cursor-pointer font-bold text-gray-800">
                     Gruppe 8
                 </div>
                 {/* Right section: Links and Icons */}
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                         Hjem
                     </a>
                     <button onClick={navigateToPortfolio} className="text-gray-600 hover:text-gray-900">
-                        Portefølje
+                        Portfolio
                     </button>
                     <button onClick={handleContactClick} className="text-gray-600 hover:text-gray-900">
                         Kontakt oss
