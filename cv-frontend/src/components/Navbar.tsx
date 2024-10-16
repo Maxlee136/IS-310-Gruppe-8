@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
                     Gruppe 8
                 </div>
                 {/* Right section: Links and Icons */}
-                <div className="flex space-x-6 items-center">
+                <div className="flex space-x-4 items-center">
                     <a href="/" className="text-gray-600 hover:text-gray-900">
                         Hjem
                     </a>
